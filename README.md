@@ -56,3 +56,23 @@ football-kg/
 - **Knowledge Search**: Explore players and teams.
 - **SPARQL Interface**: Run custom queries against local and external sources.
 - **Insights**: Performance analysis and team fit recommendations.
+
+## Web Application Preview
+
+Here are some previews of the web application and its features:
+
+### 1. Dashboard & Visualizations Overview
+![Dashboard](screenshots/dashboard.png)
+
+### 2. Interactive Player Comparison
+![Player Comparison](screenshots/player_comparison.png)
+
+### 3. Interactive Team Comparison
+![Team Comparison](screenshots/team_comparison.png)
+
+### 4. SPARQL Queries & Results
+![SPARQL Queries](screenshots/queries.png)
+
+### 5. Insights & Team Fit Recommendations
+![Insights](screenshots/insights.png)
+
