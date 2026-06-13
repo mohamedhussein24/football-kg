@@ -1,0 +1,2743 @@
+@prefix : <http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/> .
+@prefix ex: <http://www.semanticSports.org/data/> .
+@prefix ont: <http://www.semanticSports.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+swrla:isRuleEnabled a owl:AnnotationProperty ;
+    owl:sameAs swrla:isRuleEnabled .
+
+ex:AleksandarMitrovic a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "AleksandarMitrovic"^^xsd:string ;
+    ont:hasPerformance ex:Perf_AleksandarMitrovic ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:AlHilal ;
+    ont:playedIn ex:Match6 ;
+    owl:sameAs ex:AleksandarMitrovic .
+
+ex:AndersonTalisca a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "AndersonTalisca"^^xsd:string ;
+    ont:hasPerformance ex:Perf_AndersonTalisca ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:AlNassr ;
+    ont:playedIn ex:Match9 ;
+    owl:sameAs ex:AndersonTalisca .
+
+ex:CristianoRonaldo a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "CristianoRonaldo"^^xsd:string ;
+    ont:hasPerformance ex:Perf_CristianoRonaldo ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:AlNassr ;
+    ont:playedIn ex:Match5 ;
+    owl:sameAs ex:CristianoRonaldo .
+
+ex:ErlingHaaland a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "ErlingHaaland"^^xsd:string ;
+    ont:hasPerformance ex:Perf_ErlingHaaland ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:ManchesterCity ;
+    ont:playedIn ex:Match8 ;
+    owl:sameAs ex:ErlingHaaland .
+
+ex:HarryKane a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "HarryKane"^^xsd:string ;
+    ont:hasPerformance ex:Perf_HarryKane ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:BayernMunich ;
+    ont:playedIn ex:Match11 ;
+    owl:sameAs ex:HarryKane .
+
+ex:HeungMinSon a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "HeungMinSon"^^xsd:string ;
+    ont:hasPerformance ex:Perf_HeungMinSon ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:Tottenham ;
+    ont:playedIn ex:Match12 ;
+    owl:sameAs ex:HeungMinSon .
+
+ex:JamalMusiala a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "JamalMusiala"^^xsd:string ;
+    ont:hasPerformance ex:Perf_JamalMusiala ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:BayernMunich ;
+    ont:playedIn ex:Match1 ;
+    owl:sameAs ex:JamalMusiala .
+
+ex:JamesMaddison a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "JamesMaddison"^^xsd:string ;
+    ont:hasPerformance ex:Perf_JamesMaddison ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:Tottenham ;
+    ont:playedIn ex:Match8 ;
+    owl:sameAs ex:JamesMaddison .
+
+ex:JudeBellingham a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "JudeBellingham"^^xsd:string ;
+    ont:hasPerformance ex:Perf_JudeBellingham ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:RealMadrid ;
+    ont:playedIn ex:Match12 ;
+    owl:sameAs ex:JudeBellingham .
+
+ex:KevinDeBruyne a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "KevinDeBruyne"^^xsd:string ;
+    ont:hasPerformance ex:Perf_KevinDeBruyne ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:ManchesterCity ;
+    ont:playedIn ex:Match6 ;
+    owl:sameAs ex:KevinDeBruyne .
+
+ex:KylianMbappe a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "KylianMbappe"^^xsd:string ;
+    ont:hasPerformance ex:Perf_KylianMbappe ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:RealMadrid ;
+    ont:playedIn ex:Match5 ;
+    owl:sameAs ex:KylianMbappe .
+
+ex:LionelMessi a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "LionelMessi"^^xsd:string ;
+    ont:hasPerformance ex:Perf_LionelMessi ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:InterMiami ;
+    ont:playedIn ex:Match6 ;
+    owl:sameAs ex:LionelMessi .
+
+ex:LukaModric a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "LukaModric"^^xsd:string ;
+    ont:hasPerformance ex:Perf_LukaModric ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:RealMadrid ;
+    ont:playedIn ex:Match11 ;
+    owl:sameAs ex:LukaModric .
+
+ex:NeymarJr a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "NeymarJr"^^xsd:string ;
+    ont:hasPerformance ex:Perf_NeymarJr ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:AlHilal ;
+    ont:playedIn ex:Match9 ;
+    owl:sameAs ex:NeymarJr .
+
+ex:OusmaneDembele a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "OusmaneDembele"^^xsd:string ;
+    ont:hasPerformance ex:Perf_OusmaneDembele ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:PSG ;
+    ont:playedIn ex:Match1 ;
+    owl:sameAs ex:OusmaneDembele .
+
+ex:PhilFoden a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "PhilFoden"^^xsd:string ;
+    ont:hasPerformance ex:Perf_PhilFoden ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:ManchesterCity ;
+    ont:playedIn ex:Match9 ;
+    owl:sameAs ex:PhilFoden .
+
+ex:RobertLewandowski a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "RobertLewandowski"^^xsd:string ;
+    ont:hasPerformance ex:Perf_RobertLewandowski ;
+    ont:hasPosition ont:Defender ;
+    ont:hasTeam ex:Barcelona ;
+    ont:playedIn ex:Match1 ;
+    owl:sameAs ex:RobertLewandowski .
+
+ex:RubenNeves a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "RubenNeves"^^xsd:string ;
+    ont:hasPerformance ex:Perf_RubenNeves ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:AlHilal ;
+    ont:playedIn ex:Match12 ;
+    owl:sameAs ex:RubenNeves .
+
+ex:SadioMane a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "SadioMane"^^xsd:string ;
+    ont:hasPerformance ex:Perf_SadioMane ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:AlNassr ;
+    ont:playedIn ex:Match1 ;
+    owl:sameAs ex:SadioMane .
+
+ex:ViniciusJr a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:label "ViniciusJr"^^xsd:string ;
+    ont:hasPerformance ex:Perf_ViniciusJr ;
+    ont:hasPosition ont:Defender ;
+    ont:hasTeam ex:RealMadrid ;
+    ont:playedIn ex:Match5 ;
+    owl:sameAs ex:ViniciusJr .
+
+ont: a owl:Ontology ;
+    rdfs:comment "This ontology models a football domain including players, coaches, teams, matches, tournaments, positions, and performance metrics. It captures relationships such as player participation, match performance, coaching roles, and tournament structure. The ontology includes reasoning constraints, cardinality restrictions, and inverse properties to ensure semantic consistency and enable inference." ;
+    owl:sameAs ont: .
+
+ont:AlexisMacAllister a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "AlexisMacAllister"^^xsd:string ;
+    ont:hasPerformance ex:Perf_AlexisMacAllister,
+        ont:Perf201,
+        ont:Perf202,
+        ont:Perf203 ;
+    ont:hasPosition ont:Midfielder,
+        ont:MidfielderPos ;
+    ont:hasTeam ex:LiverpoolFC,
+        ont:LiverpoolFC ;
+    ont:playedIn ex:Match10,
+        ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ont:AlexisMacAllister .
+
+ont:CodyGakpo a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "CodyGakpo"^^xsd:string ;
+    ont:hasPerformance ex:Perf_CodyGakpo,
+        ont:Perf701,
+        ont:Perf702,
+        ont:Perf703 ;
+    ont:hasPosition ont:Defender,
+        ont:ForwardPos ;
+    ont:hasTeam ex:LiverpoolFC,
+        ont:LiverpoolFC ;
+    ont:playedIn ex:Match3,
+        ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ont:CodyGakpo .
+
+ont:DarwinNunez a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "DarwinNunez"^^xsd:string ;
+    ont:hasPerformance ex:Perf_DarwinNunez,
+        ont:Perf301,
+        ont:Perf302,
+        ont:Perf303 ;
+    ont:hasPosition ont:ForwardPos,
+        ont:Midfielder ;
+    ont:hasTeam ex:LiverpoolFC,
+        ont:LiverpoolFC ;
+    ont:playedIn ex:Match1,
+        ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ont:DarwinNunez .
+
+ont:GoalkeeperPos a ont:Goalkeeper,
+        ont:Position,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs ont:GoalkeeperPos .
+
+ont:LuisDiaz a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "LuisDiaz"^^xsd:string ;
+    ont:hasPerformance ex:Perf_LuisDiaz,
+        ont:Perf401,
+        ont:Perf402,
+        ont:Perf403 ;
+    ont:hasPosition ont:ForwardPos,
+        ont:Midfielder ;
+    ont:hasTeam ex:LiverpoolFC,
+        ont:LiverpoolFC ;
+    ont:playedIn ex:Match9,
+        ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ont:LuisDiaz .
+
+ont:MohamedSalah a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "MohamedSalah"^^xsd:string ;
+    ont:hasPerformance ex:Perf_MohamedSalah,
+        ont:Perf101,
+        ont:Perf102,
+        ont:Perf103 ;
+    ont:hasPosition ont:Forward,
+        ont:ForwardPos ;
+    ont:hasTeam ex:LiverpoolFC,
+        ont:LiverpoolFC ;
+    ont:playedIn ex:Match12,
+        ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ont:MohamedSalah .
+
+ont:TrentAlexanderArnold a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "TrentAlexanderArnold"^^xsd:string ;
+    ont:hasPerformance ex:Perf_TrentAlexanderArnold,
+        ont:Perf601,
+        ont:Perf602,
+        ont:Perf603 ;
+    ont:hasPosition ont:Defender,
+        ont:DefenderPos ;
+    ont:hasTeam ex:LiverpoolFC,
+        ont:LiverpoolFC ;
+    ont:playedIn ex:Match6,
+        ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ont:TrentAlexanderArnold .
+
+ont:VirgilVanDijk a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "VirgilVanDijk"^^xsd:string ;
+    ont:hasPerformance ex:Perf_VirgilVanDijk,
+        ont:Perf501,
+        ont:Perf502,
+        ont:Perf503 ;
+    ont:hasPosition ont:DefenderPos,
+        ont:Forward ;
+    ont:hasTeam ex:LiverpoolFC,
+        ont:LiverpoolFC ;
+    ont:playedIn ex:Match8,
+        ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ont:VirgilVanDijk .
+
+rdf:HTML a rdfs:Datatype ;
+    owl:sameAs rdf:HTML .
+
+rdf:PlainLiteral a rdfs:Datatype ;
+    owl:sameAs rdf:PlainLiteral .
+
+rdf:XMLLiteral a rdfs:Datatype ;
+    owl:sameAs rdf:XMLLiteral .
+
+rdf:first owl:sameAs rdf:first .
+
+rdf:langString a rdfs:Datatype ;
+    owl:sameAs rdf:langString .
+
+rdf:rest owl:sameAs rdf:rest .
+
+rdf:type owl:sameAs rdf:type .
+
+rdfs:Literal a rdfs:Datatype ;
+    owl:sameAs rdfs:Literal .
+
+rdfs:comment a owl:AnnotationProperty ;
+    owl:sameAs rdfs:comment .
+
+rdfs:domain owl:sameAs rdfs:domain .
+
+rdfs:isDefinedBy a owl:AnnotationProperty ;
+    owl:sameAs rdfs:isDefinedBy .
+
+rdfs:label a owl:AnnotationProperty ;
+    owl:sameAs rdfs:label .
+
+rdfs:range owl:sameAs rdfs:range .
+
+rdfs:seeAlso a owl:AnnotationProperty ;
+    owl:sameAs rdfs:seeAlso .
+
+rdfs:subClassOf owl:sameAs rdfs:subClassOf .
+
+rdfs:subPropertyOf owl:sameAs rdfs:subPropertyOf .
+
+xsd:NCName a rdfs:Datatype ;
+    owl:sameAs xsd:NCName .
+
+xsd:NMTOKEN a rdfs:Datatype ;
+    owl:sameAs xsd:NMTOKEN .
+
+xsd:Name a rdfs:Datatype ;
+    owl:sameAs xsd:Name .
+
+xsd:anyURI a rdfs:Datatype ;
+    owl:sameAs xsd:anyURI .
+
+xsd:base64Binary a rdfs:Datatype ;
+    owl:sameAs xsd:base64Binary .
+
+xsd:byte a rdfs:Datatype ;
+    owl:sameAs xsd:byte .
+
+xsd:date a rdfs:Datatype ;
+    owl:sameAs xsd:date .
+
+xsd:dateTimeStamp a rdfs:Datatype ;
+    owl:sameAs xsd:dateTimeStamp .
+
+xsd:double a rdfs:Datatype ;
+    owl:sameAs xsd:double .
+
+xsd:hexBinary a rdfs:Datatype ;
+    owl:sameAs xsd:hexBinary .
+
+xsd:int a rdfs:Datatype ;
+    owl:sameAs xsd:int .
+
+xsd:language a rdfs:Datatype ;
+    owl:sameAs xsd:language .
+
+xsd:long a rdfs:Datatype ;
+    owl:sameAs xsd:long .
+
+xsd:negativeInteger a rdfs:Datatype ;
+    owl:sameAs xsd:negativeInteger .
+
+xsd:nonPositiveInteger a rdfs:Datatype ;
+    owl:sameAs xsd:nonPositiveInteger .
+
+xsd:normalizedString a rdfs:Datatype ;
+    owl:sameAs xsd:normalizedString .
+
+xsd:positiveInteger a rdfs:Datatype ;
+    owl:sameAs xsd:positiveInteger .
+
+xsd:short a rdfs:Datatype ;
+    owl:sameAs xsd:short .
+
+xsd:time a rdfs:Datatype ;
+    owl:sameAs xsd:time .
+
+xsd:token a rdfs:Datatype ;
+    owl:sameAs xsd:token .
+
+xsd:unsignedByte a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedByte .
+
+xsd:unsignedInt a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedInt .
+
+xsd:unsignedLong a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedLong .
+
+xsd:unsignedShort a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedShort .
+
+owl:allValuesFrom owl:sameAs owl:allValuesFrom .
+
+owl:backwardCompatibleWith a owl:AnnotationProperty ;
+    owl:sameAs owl:backwardCompatibleWith .
+
+owl:deprecated a owl:AnnotationProperty ;
+    owl:sameAs owl:deprecated .
+
+owl:disjointWith owl:sameAs owl:disjointWith .
+
+owl:equivalentClass owl:sameAs owl:equivalentClass .
+
+owl:equivalentProperty owl:sameAs owl:equivalentProperty .
+
+owl:incompatibleWith a owl:AnnotationProperty ;
+    owl:sameAs owl:incompatibleWith .
+
+owl:inverseOf owl:sameAs owl:inverseOf .
+
+owl:minQualifiedCardinality owl:sameAs owl:minQualifiedCardinality .
+
+owl:onClass owl:sameAs owl:onClass .
+
+owl:onDataRange owl:sameAs owl:onDataRange .
+
+owl:onProperty owl:sameAs owl:onProperty .
+
+owl:priorVersion a owl:AnnotationProperty ;
+    owl:sameAs owl:priorVersion .
+
+owl:qualifiedCardinality owl:sameAs owl:qualifiedCardinality .
+
+owl:sameAs owl:sameAs owl:sameAs .
+
+owl:versionInfo a owl:AnnotationProperty ;
+    owl:sameAs owl:versionInfo .
+
+swrl:argument1 owl:sameAs swrl:argument1 .
+
+swrl:argument2 owl:sameAs swrl:argument2 .
+
+swrl:arguments owl:sameAs swrl:arguments .
+
+swrl:body owl:sameAs swrl:body .
+
+swrl:builtin owl:sameAs swrl:builtin .
+
+swrl:classPredicate owl:sameAs swrl:classPredicate .
+
+swrl:head owl:sameAs swrl:head .
+
+swrl:propertyPredicate owl:sameAs swrl:propertyPredicate .
+
+ex:Barcelona a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "Barcelona"^^xsd:string ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:Barcelona .
+
+ex:InterMiami a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "InterMiami"^^xsd:string ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:InterMiami .
+
+ex:Match2 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-09-08T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match2 .
+
+ex:Match4 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-09-22T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match4 .
+
+ex:Match7 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-10-13T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match7 .
+
+ex:PSG a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "PSG"^^xsd:string ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:PSG .
+
+ex:Perf_AleksandarMitrovic a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match6 ;
+    ont:hasPerformanceRating "8.4"^^xsd:float ;
+    ont:madeAssists 4 ;
+    ont:playedMinutes 766 ;
+    ont:scoredGoals 28 ;
+    owl:sameAs ex:Perf_AleksandarMitrovic .
+
+ex:Perf_AlexisMacAllister a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match10 ;
+    ont:hasPerformanceRating "6.1"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 1571 ;
+    ont:scoredGoals 7 ;
+    owl:sameAs ex:Perf_AlexisMacAllister .
+
+ex:Perf_AndersonTalisca a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match9 ;
+    ont:hasPerformanceRating "8.4"^^xsd:float ;
+    ont:madeAssists 4 ;
+    ont:playedMinutes 2206 ;
+    ont:scoredGoals 27 ;
+    owl:sameAs ex:Perf_AndersonTalisca .
+
+ex:Perf_CodyGakpo a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match3 ;
+    ont:hasPerformanceRating "6.0"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 1462 ;
+    ont:scoredGoals 10 ;
+    owl:sameAs ex:Perf_CodyGakpo .
+
+ex:Perf_CristianoRonaldo a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match5 ;
+    ont:hasPerformanceRating "8.9"^^xsd:float ;
+    ont:madeAssists 5 ;
+    ont:playedMinutes 1651 ;
+    ont:scoredGoals 35 ;
+    owl:sameAs ex:Perf_CristianoRonaldo .
+
+ex:Perf_DarwinNunez a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match1 ;
+    ont:hasPerformanceRating "6.1"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 1537 ;
+    ont:scoredGoals 15 ;
+    owl:sameAs ex:Perf_DarwinNunez .
+
+ex:Perf_ErlingHaaland a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match8 ;
+    ont:hasPerformanceRating "10.0"^^xsd:float ;
+    ont:madeAssists 8 ;
+    ont:playedMinutes 1216 ;
+    ont:scoredGoals 52 ;
+    owl:sameAs ex:Perf_ErlingHaaland .
+
+ex:Perf_HarryKane a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match11 ;
+    ont:hasPerformanceRating "8.8"^^xsd:float ;
+    ont:madeAssists 6 ;
+    ont:playedMinutes 1232 ;
+    ont:scoredGoals 42 ;
+    owl:sameAs ex:Perf_HarryKane .
+
+ex:Perf_HeungMinSon a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match12 ;
+    ont:hasPerformanceRating "7.9"^^xsd:float ;
+    ont:madeAssists 4 ;
+    ont:playedMinutes 1003 ;
+    ont:scoredGoals 24 ;
+    owl:sameAs ex:Perf_HeungMinSon .
+
+ex:Perf_JamalMusiala a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match1 ;
+    ont:hasPerformanceRating "6.1"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 2667 ;
+    ont:scoredGoals 12 ;
+    owl:sameAs ex:Perf_JamalMusiala .
+
+ex:Perf_JamesMaddison a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match8 ;
+    ont:hasPerformanceRating "5.7"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 1733 ;
+    ont:scoredGoals 6 ;
+    owl:sameAs ex:Perf_JamesMaddison .
+
+ex:Perf_JudeBellingham a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match12 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 3 ;
+    ont:playedMinutes 1261 ;
+    ont:scoredGoals 23 ;
+    owl:sameAs ex:Perf_JudeBellingham .
+
+ex:Perf_KevinDeBruyne a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match6 ;
+    ont:hasPerformanceRating "5.9"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 490 ;
+    ont:scoredGoals 10 ;
+    owl:sameAs ex:Perf_KevinDeBruyne .
+
+ex:Perf_KylianMbappe a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match5 ;
+    ont:hasPerformanceRating "9.1"^^xsd:float ;
+    ont:madeAssists 7 ;
+    ont:playedMinutes 2948 ;
+    ont:scoredGoals 44 ;
+    owl:sameAs ex:Perf_KylianMbappe .
+
+ex:Perf_LionelMessi a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match6 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 3 ;
+    ont:playedMinutes 2405 ;
+    ont:scoredGoals 21 ;
+    owl:sameAs ex:Perf_LionelMessi .
+
+ex:Perf_LuisDiaz a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match9 ;
+    ont:hasPerformanceRating "6.4"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 1161 ;
+    ont:scoredGoals 11 ;
+    owl:sameAs ex:Perf_LuisDiaz .
+
+ex:Perf_LukaModric a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match11 ;
+    ont:hasPerformanceRating "5.7"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 499 ;
+    ont:scoredGoals 4 ;
+    owl:sameAs ex:Perf_LukaModric .
+
+ex:Perf_MohamedSalah a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match12 ;
+    ont:hasPerformanceRating "7.7"^^xsd:float ;
+    ont:madeAssists 4 ;
+    ont:playedMinutes 541 ;
+    ont:scoredGoals 25 ;
+    owl:sameAs ex:Perf_MohamedSalah .
+
+ex:Perf_NeymarJr a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match9 ;
+    ont:hasPerformanceRating "6.2"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 205 ;
+    ont:scoredGoals 13 ;
+    owl:sameAs ex:Perf_NeymarJr .
+
+ex:Perf_OusmaneDembele a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match1 ;
+    ont:hasPerformanceRating "5.9"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 1815 ;
+    ont:scoredGoals 11 ;
+    owl:sameAs ex:Perf_OusmaneDembele .
+
+ex:Perf_PhilFoden a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match9 ;
+    ont:hasPerformanceRating "6.8"^^xsd:float ;
+    ont:madeAssists 3 ;
+    ont:playedMinutes 810 ;
+    ont:scoredGoals 19 ;
+    owl:sameAs ex:Perf_PhilFoden .
+
+ex:Perf_RobertLewandowski a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match1 ;
+    ont:hasPerformanceRating "9.0"^^xsd:float ;
+    ont:madeAssists 5 ;
+    ont:playedMinutes 1314 ;
+    ont:scoredGoals 33 ;
+    owl:sameAs ex:Perf_RobertLewandowski .
+
+ex:Perf_RubenNeves a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match12 ;
+    ont:hasPerformanceRating "5.3"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 1718 ;
+    ont:scoredGoals 6 ;
+    owl:sameAs ex:Perf_RubenNeves .
+
+ex:Perf_SadioMane a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match1 ;
+    ont:hasPerformanceRating "6.8"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 696 ;
+    ont:scoredGoals 16 ;
+    owl:sameAs ex:Perf_SadioMane .
+
+ex:Perf_TrentAlexanderArnold a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match6 ;
+    ont:hasPerformanceRating "5.4"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 2243 ;
+    ont:scoredGoals 4 ;
+    owl:sameAs ex:Perf_TrentAlexanderArnold .
+
+ex:Perf_ViniciusJr a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match5 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 4 ;
+    ont:playedMinutes 1845 ;
+    ont:scoredGoals 24 ;
+    owl:sameAs ex:Perf_ViniciusJr .
+
+ex:Perf_VirgilVanDijk a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:Thing ;
+    ont:forMatch ex:Match8 ;
+    ont:hasPerformanceRating "5.7"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 2165 ;
+    ont:scoredGoals 5 ;
+    owl:sameAs ex:Perf_VirgilVanDijk .
+
+ont:JurgenKlopp a ont:Coach,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:coachesTeam ont:LiverpoolFC ;
+    owl:sameAs ont:JurgenKlopp .
+
+ont:Perf101 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "9.1"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 90 ;
+    ont:scoredGoals 1 ;
+    owl:sameAs ont:Perf101 .
+
+ont:Perf102 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 88 ;
+    ont:scoredGoals 1 ;
+    owl:sameAs ont:Perf102 .
+
+ont:Perf103 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.4"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 87 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf103 .
+
+ont:Perf201 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 90 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf201 .
+
+ont:Perf202 a ont:PerformanceMetric,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:scoredGoals 1,
+        90 ;
+    owl:sameAs ont:Perf202 .
+
+ont:Perf203 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.4"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 88 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf203 .
+
+ont:Perf301 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 ;
+    owl:sameAs ont:Perf301 .
+
+ont:Perf302 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf302 .
+
+ont:Perf303 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf303 .
+
+ont:Perf401 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 ;
+    owl:sameAs ont:Perf401 .
+
+ont:Perf402 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf402 .
+
+ont:Perf403 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf403 .
+
+ont:Perf501 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 ;
+    owl:sameAs ont:Perf501 .
+
+ont:Perf502 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf502 .
+
+ont:Perf503 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf503 .
+
+ont:Perf601 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 ;
+    owl:sameAs ont:Perf601 .
+
+ont:Perf602 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf602 .
+
+ont:Perf603 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf603 .
+
+ont:Perf701 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 ;
+    owl:sameAs ont:Perf701 .
+
+ont:Perf702 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf702 .
+
+ont:Perf703 a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:PerformanceMetric,
+        ont:Player,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 ;
+    owl:sameAs ont:Perf703 .
+
+xsd:boolean a rdfs:Datatype ;
+    owl:disjointWith xsd:dateTime,
+        xsd:decimal,
+        xsd:float,
+        xsd:string ;
+    owl:sameAs xsd:boolean .
+
+owl:Ontology owl:sameAs owl:Ontology .
+
+"2024-09-01T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-09-01T15:00:00"^^xsd:dateTime .
+
+"2024-09-08T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-09-08T15:00:00"^^xsd:dateTime .
+
+"2024-09-22T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-09-22T15:00:00"^^xsd:dateTime .
+
+"2024-09-29T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-09-29T15:00:00"^^xsd:dateTime .
+
+"2024-10-04T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-10-04T15:00:00"^^xsd:dateTime .
+
+"2024-10-06T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-10-06T15:00:00"^^xsd:dateTime .
+
+"2024-10-13T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-10-13T15:00:00"^^xsd:dateTime .
+
+"2024-10-15T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-10-15T15:00:00"^^xsd:dateTime .
+
+"2024-10-20T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-10-20T15:00:00"^^xsd:dateTime .
+
+"2024-10-27T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-10-27T15:00:00"^^xsd:dateTime .
+
+"2024-11-03T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-11-03T15:00:00"^^xsd:dateTime .
+
+"2024-11-10T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-11-10T15:00:00"^^xsd:dateTime .
+
+"2024-11-17T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-11-17T15:00:00"^^xsd:dateTime .
+
+4.5 a xsd:decimal ;
+    owl:sameAs 4.5 .
+
+"5.3"^^xsd:float a xsd:float ;
+    owl:sameAs "5.3"^^xsd:float .
+
+"5.4"^^xsd:float a xsd:float ;
+    owl:sameAs "5.4"^^xsd:float .
+
+"6.0"^^xsd:float a xsd:float ;
+    owl:sameAs "6.0"^^xsd:float .
+
+"6.2"^^xsd:float a xsd:float ;
+    owl:sameAs "6.2"^^xsd:float .
+
+"6.4"^^xsd:float a xsd:float ;
+    owl:sameAs "6.4"^^xsd:float .
+
+"7.7"^^xsd:float a xsd:float ;
+    owl:sameAs "7.7"^^xsd:float .
+
+"7.9"^^xsd:float a xsd:float ;
+    owl:sameAs "7.9"^^xsd:float .
+
+8 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 8 .
+
+"8.8"^^xsd:float a xsd:float ;
+    owl:sameAs "8.8"^^xsd:float .
+
+"8.9"^^xsd:float a xsd:float ;
+    owl:sameAs "8.9"^^xsd:float .
+
+"9.0"^^xsd:float a xsd:float ;
+    owl:sameAs "9.0"^^xsd:float .
+
+9.5 a xsd:decimal ;
+    owl:sameAs 9.5 .
+
+"10.0"^^xsd:float a xsd:float ;
+    owl:sameAs "10.0"^^xsd:float .
+
+12 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 12 .
+
+13 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 13 .
+
+15 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 15 .
+
+16 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 16 .
+
+19 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 19 .
+
+21 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 21 .
+
+23 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 23 .
+
+25 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 25 .
+
+27 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 27 .
+
+28 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 28 .
+
+33 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 33 .
+
+35 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 35 .
+
+42 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 42 .
+
+44 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 44 .
+
+52 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 52 .
+
+85 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 85 .
+
+87 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 87 .
+
+205 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 205 .
+
+490 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 490 .
+
+499 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 499 .
+
+541 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 541 .
+
+696 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 696 .
+
+766 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 766 .
+
+810 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 810 .
+
+1003 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1003 .
+
+1161 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1161 .
+
+1216 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1216 .
+
+1232 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1232 .
+
+1261 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1261 .
+
+1314 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1314 .
+
+1462 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1462 .
+
+1537 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1537 .
+
+1571 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1571 .
+
+1651 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1651 .
+
+1718 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1718 .
+
+1733 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1733 .
+
+1815 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1815 .
+
+1845 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1845 .
+
+2165 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 2165 .
+
+2206 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 2206 .
+
+2243 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 2243 .
+
+2405 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 2405 .
+
+2667 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 2667 .
+
+2948 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 2948 .
+
+"AlHilal"^^xsd:string a xsd:string ;
+    owl:sameAs "AlHilal"^^xsd:string .
+
+"AlNassr"^^xsd:string a xsd:string ;
+    owl:sameAs "AlNassr"^^xsd:string .
+
+"AleksandarMitrovic"^^xsd:string a xsd:string ;
+    owl:sameAs "AleksandarMitrovic"^^xsd:string .
+
+"AlexisMacAllister"^^xsd:string a xsd:string ;
+    owl:sameAs "AlexisMacAllister"^^xsd:string .
+
+"AndersonTalisca"^^xsd:string a xsd:string ;
+    owl:sameAs "AndersonTalisca"^^xsd:string .
+
+"Barcelona"^^xsd:string a xsd:string ;
+    owl:sameAs "Barcelona"^^xsd:string .
+
+"BayernMunich"^^xsd:string a xsd:string ;
+    owl:sameAs "BayernMunich"^^xsd:string .
+
+"CodyGakpo"^^xsd:string a xsd:string ;
+    owl:sameAs "CodyGakpo"^^xsd:string .
+
+"CristianoRonaldo"^^xsd:string a xsd:string ;
+    owl:sameAs "CristianoRonaldo"^^xsd:string .
+
+"DarwinNunez"^^xsd:string a xsd:string ;
+    owl:sameAs "DarwinNunez"^^xsd:string .
+
+"ErlingHaaland"^^xsd:string a xsd:string ;
+    owl:sameAs "ErlingHaaland"^^xsd:string .
+
+"ExcellentPlayerRule" owl:sameAs "ExcellentPlayerRule" .
+
+"FatigueRiskRule" owl:sameAs "FatigueRiskRule" .
+
+"HarryKane"^^xsd:string a xsd:string ;
+    owl:sameAs "HarryKane"^^xsd:string .
+
+"HeungMinSon"^^xsd:string a xsd:string ;
+    owl:sameAs "HeungMinSon"^^xsd:string .
+
+"InterMiami"^^xsd:string a xsd:string ;
+    owl:sameAs "InterMiami"^^xsd:string .
+
+"JamalMusiala"^^xsd:string a xsd:string ;
+    owl:sameAs "JamalMusiala"^^xsd:string .
+
+"JamesMaddison"^^xsd:string a xsd:string ;
+    owl:sameAs "JamesMaddison"^^xsd:string .
+
+"JudeBellingham"^^xsd:string a xsd:string ;
+    owl:sameAs "JudeBellingham"^^xsd:string .
+
+"KevinDeBruyne"^^xsd:string a xsd:string ;
+    owl:sameAs "KevinDeBruyne"^^xsd:string .
+
+"KylianMbappe"^^xsd:string a xsd:string ;
+    owl:sameAs "KylianMbappe"^^xsd:string .
+
+"LionelMessi"^^xsd:string a xsd:string ;
+    owl:sameAs "LionelMessi"^^xsd:string .
+
+"LiverpoolFC"^^xsd:string a xsd:string ;
+    owl:sameAs "LiverpoolFC"^^xsd:string .
+
+"LuisDiaz"^^xsd:string a xsd:string ;
+    owl:sameAs "LuisDiaz"^^xsd:string .
+
+"LukaModric"^^xsd:string a xsd:string ;
+    owl:sameAs "LukaModric"^^xsd:string .
+
+"ManchesterCity"^^xsd:string a xsd:string ;
+    owl:sameAs "ManchesterCity"^^xsd:string .
+
+"MohamedSalah"^^xsd:string a xsd:string ;
+    owl:sameAs "MohamedSalah"^^xsd:string .
+
+"NeymarJr"^^xsd:string a xsd:string ;
+    owl:sameAs "NeymarJr"^^xsd:string .
+
+"OusmaneDembele"^^xsd:string a xsd:string ;
+    owl:sameAs "OusmaneDembele"^^xsd:string .
+
+"PSG"^^xsd:string a xsd:string ;
+    owl:sameAs "PSG"^^xsd:string .
+
+"PhilFoden"^^xsd:string a xsd:string ;
+    owl:sameAs "PhilFoden"^^xsd:string .
+
+"RealMadrid"^^xsd:string a xsd:string ;
+    owl:sameAs "RealMadrid"^^xsd:string .
+
+"RobertLewandowski"^^xsd:string a xsd:string ;
+    owl:sameAs "RobertLewandowski"^^xsd:string .
+
+"RubenNeves"^^xsd:string a xsd:string ;
+    owl:sameAs "RubenNeves"^^xsd:string .
+
+"SadioMane"^^xsd:string a xsd:string ;
+    owl:sameAs "SadioMane"^^xsd:string .
+
+"This ontology models a football domain including players, coaches, teams, matches, tournaments, positions, and performance metrics. It captures relationships such as player participation, match performance, coaching roles, and tournament structure. The ontology includes reasoning constraints, cardinality restrictions, and inverse properties to ensure semantic consistency and enable inference." owl:sameAs "This ontology models a football domain including players, coaches, teams, matches, tournaments, positions, and performance metrics. It captures relationships such as player participation, match performance, coaching roles, and tournament structure. The ontology includes reasoning constraints, cardinality restrictions, and inverse properties to ensure semantic consistency and enable inference." .
+
+"Tottenham"^^xsd:string a xsd:string ;
+    owl:sameAs "Tottenham"^^xsd:string .
+
+"TrentAlexanderArnold"^^xsd:string a xsd:string ;
+    owl:sameAs "TrentAlexanderArnold"^^xsd:string .
+
+"ViniciusJr"^^xsd:string a xsd:string ;
+    owl:sameAs "ViniciusJr"^^xsd:string .
+
+"VirgilVanDijk"^^xsd:string a xsd:string ;
+    owl:sameAs "VirgilVanDijk"^^xsd:string .
+
+ex:BayernMunich a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "BayernMunich"^^xsd:string ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:BayernMunich .
+
+ex:Tottenham a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "Tottenham"^^xsd:string ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:Tottenham .
+
+ont:DefenderPos a ont:Defender,
+        ont:Position,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs ont:DefenderPos .
+
+ont:MidfielderPos a _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Midfielder,
+        ont:Player,
+        ont:Position,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:hasPosition ont:MidfielderPos ;
+    owl:sameAs ont:MidfielderPos .
+
+ont:coachesTeam a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain ont:Coach,
+        owl:Thing ;
+    rdfs:range _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:coachesTeam ;
+    owl:equivalentProperty ont:coachesTeam ;
+    owl:inverseOf ont:hasCoach ;
+    owl:sameAs ont:coachesTeam .
+
+ont:hasMatch a owl:ObjectProperty ;
+    rdfs:domain _:Na831b2a3eebb41c283cd92a1128631d6,
+        ont:Tournament,
+        owl:Thing ;
+    rdfs:range _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:hasMatch ;
+    owl:equivalentProperty ont:hasMatch ;
+    owl:inverseOf ont:partOfTournament ;
+    owl:sameAs ont:hasMatch .
+
+:a a swrl:Variable ;
+    owl:sameAs :a .
+
+:g a swrl:Variable ;
+    owl:sameAs :g .
+
+:m a swrl:Variable ;
+    owl:sameAs :m .
+
+xsd:nonNegativeInteger a rdfs:Datatype ;
+    owl:sameAs xsd:nonNegativeInteger .
+
+owl:FunctionalProperty owl:sameAs owl:FunctionalProperty .
+
+owl:Nothing a owl:Class ;
+    rdfs:subClassOf _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7322f67085934b838a387b5c08a56dcb,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Na831b2a3eebb41c283cd92a1128631d6,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Coach,
+        ont:Defender,
+        ont:Forward,
+        ont:Goalkeeper,
+        ont:Match,
+        ont:Midfielder,
+        ont:PerformanceMetric,
+        ont:Player,
+        ont:Position,
+        ont:Team,
+        ont:Tournament,
+        owl:Nothing,
+        owl:Thing ;
+    owl:equivalentClass owl:Nothing ;
+    owl:sameAs owl:Nothing .
+
+swrl:ClassAtom owl:sameAs swrl:ClassAtom .
+
+swrl:Imp owl:sameAs swrl:Imp .
+
+true a xsd:boolean ;
+    owl:sameAs true .
+
+"2024-09-15T15:00:00"^^xsd:dateTime a xsd:dateTime ;
+    owl:sameAs "2024-09-15T15:00:00"^^xsd:dateTime .
+
+"0"^^xsd:nonNegativeInteger a xsd:decimal,
+        xsd:integer,
+        xsd:nonNegativeInteger ;
+    owl:sameAs "0"^^xsd:nonNegativeInteger .
+
+"5.9"^^xsd:float a xsd:float ;
+    owl:sameAs "5.9"^^xsd:float .
+
+"6.8"^^xsd:float a xsd:float ;
+    owl:sameAs "6.8"^^xsd:float .
+
+7 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 7 .
+
+"7.4"^^xsd:float a xsd:float ;
+    owl:sameAs "7.4"^^xsd:float .
+
+"8.4"^^xsd:float a xsd:float ;
+    owl:sameAs "8.4"^^xsd:float .
+
+"9.1"^^xsd:float a xsd:float ;
+    owl:sameAs "9.1"^^xsd:float .
+
+10 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 10 .
+
+11 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 11 .
+
+24 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 24 .
+
+88 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 88 .
+
+"" owl:sameAs "" .
+
+ex:AlHilal a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "AlHilal"^^xsd:string ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:AlHilal .
+
+ex:AlNassr a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "AlNassr"^^xsd:string ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:AlNassr .
+
+ex:ManchesterCity a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "ManchesterCity"^^xsd:string ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:ManchesterCity .
+
+ex:Match10 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-11-03T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match10 .
+
+ex:Match3 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-09-15T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match3 .
+
+ont:forMatch a owl:ObjectProperty ;
+    rdfs:domain ont:PerformanceMetric,
+        owl:Thing ;
+    rdfs:range _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:forMatch ;
+    owl:equivalentProperty ont:forMatch ;
+    owl:sameAs ont:forMatch .
+
+ont:hasPosition a owl:ObjectProperty ;
+    rdfs:domain _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:range ont:Position,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:hasPosition ;
+    owl:equivalentProperty ont:hasPosition ;
+    owl:sameAs ont:hasPosition .
+
+ont:hasTeam a owl:ObjectProperty ;
+    rdfs:domain _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:range _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:hasTeam ;
+    owl:equivalentProperty ont:hasTeam ;
+    owl:sameAs ont:hasTeam .
+
+ont:madeAssists a owl:DatatypeProperty ;
+    rdfs:domain ont:PerformanceMetric,
+        owl:Thing ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf ont:madeAssists ;
+    owl:equivalentProperty ont:madeAssists ;
+    owl:sameAs ont:madeAssists .
+
+ont:matchDate a owl:DatatypeProperty ;
+    rdfs:domain _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    rdfs:range xsd:dateTime ;
+    rdfs:subPropertyOf ont:matchDate ;
+    owl:equivalentProperty ont:matchDate ;
+    owl:sameAs ont:matchDate .
+
+ont:participatesIn a owl:ObjectProperty ;
+    rdfs:domain _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:range _:Na831b2a3eebb41c283cd92a1128631d6,
+        ont:Tournament,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:participatesIn ;
+    owl:equivalentProperty ont:participatesIn ;
+    owl:sameAs ont:participatesIn .
+
+ont:playedIn a owl:ObjectProperty ;
+    rdfs:domain _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:range _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:playedIn ;
+    owl:equivalentProperty ont:playedIn ;
+    owl:sameAs ont:playedIn .
+
+ont:playedMinutes a owl:DatatypeProperty ;
+    rdfs:domain _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf ont:playedMinutes ;
+    owl:equivalentProperty ont:playedMinutes ;
+    owl:sameAs ont:playedMinutes .
+
+ont:scoredGoals a owl:DatatypeProperty ;
+    rdfs:domain ont:PerformanceMetric,
+        owl:Thing ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf ont:scoredGoals ;
+    owl:equivalentProperty ont:scoredGoals ;
+    owl:sameAs ont:scoredGoals .
+
+swrl:BuiltinAtom owl:sameAs swrl:BuiltinAtom .
+
+swrlb:greaterThan owl:sameAs swrlb:greaterThan .
+
+3 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 3 .
+
+5 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 5 .
+
+"5.7"^^xsd:float a xsd:float ;
+    owl:sameAs "5.7"^^xsd:float .
+
+6 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 6 .
+
+"6.1"^^xsd:float a xsd:float ;
+    owl:sameAs "6.1"^^xsd:float .
+
+90 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 90 .
+
+ex:RealMadrid a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "RealMadrid"^^xsd:string ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:RealMadrid .
+
+ont:ForwardPos a ont:Forward,
+        ont:Position,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs ont:ForwardPos .
+
+ont:hasCoach a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:range ont:Coach,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:hasCoach ;
+    owl:equivalentProperty ont:hasCoach ;
+    owl:sameAs ont:hasCoach .
+
+ont:hasPerformance a owl:ObjectProperty ;
+    rdfs:domain _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:range ont:PerformanceMetric,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:hasPerformance ;
+    owl:equivalentProperty ont:hasPerformance ;
+    owl:sameAs ont:hasPerformance .
+
+ont:hasPerformanceRating a owl:DatatypeProperty ;
+    rdfs:domain ont:PerformanceMetric,
+        owl:Thing ;
+    rdfs:range xsd:float ;
+    rdfs:subPropertyOf ont:hasPerformanceRating ;
+    owl:equivalentProperty ont:hasPerformanceRating ;
+    owl:sameAs ont:hasPerformanceRating .
+
+ont:hasPlayer a owl:ObjectProperty ;
+    rdfs:domain _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:range _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:hasPlayer ;
+    owl:equivalentProperty ont:hasPlayer ;
+    owl:sameAs ont:hasPlayer .
+
+swrl:Variable owl:sameAs swrl:Variable .
+
+ex:Match11 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-11-10T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match11 .
+
+ont:partOfTournament a owl:ObjectProperty ;
+    rdfs:domain _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    rdfs:range _:Na831b2a3eebb41c283cd92a1128631d6,
+        ont:Tournament,
+        owl:Thing ;
+    rdfs:subPropertyOf ont:partOfTournament ;
+    owl:equivalentProperty ont:partOfTournament ;
+    owl:sameAs ont:partOfTournament .
+
+owl:DatatypeProperty owl:sameAs owl:DatatypeProperty .
+
+swrl:DatavaluedPropertyAtom owl:sameAs swrl:DatavaluedPropertyAtom .
+
+"7.5"^^xsd:float a xsd:float ;
+    owl:sameAs "7.5"^^xsd:float .
+
+80 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 80 .
+
+81 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 81 .
+
+82 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 82 .
+
+rdf:List owl:sameAs rdf:List .
+
+"8.1"^^xsd:float a xsd:float ;
+    owl:sameAs "8.1"^^xsd:float .
+
+ex:LiverpoolFC a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    rdfs:label "LiverpoolFC"^^xsd:string ;
+    owl:sameAs ex:LiverpoolFC .
+
+ex:Match5 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-09-29T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match5 .
+
+ex:Match8 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-10-20T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match8 .
+
+ont:Coach a owl:Class ;
+    rdfs:subClassOf ont:Coach,
+        owl:Thing ;
+    owl:disjointWith ont:Player,
+        ont:Position ;
+    owl:equivalentClass ont:Coach ;
+    owl:sameAs ont:Coach .
+
+:p a swrl:Variable ;
+    owl:sameAs :p .
+
+() owl:sameAs () .
+
+4 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 4 .
+
+ont:Defender a ont:Position,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ont:Defender,
+        ont:Position,
+        owl:Thing ;
+    owl:equivalentClass ont:Defender ;
+    owl:sameAs ont:Defender .
+
+ont:LiverpoolFC a _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:hasCoach ont:JurgenKlopp ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ont:LiverpoolFC .
+
+ont:Midfielder a ont:Position,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ont:Midfielder,
+        ont:Position,
+        owl:Thing ;
+    owl:equivalentClass ont:Midfielder ;
+    owl:sameAs ont:Midfielder .
+
+ex:Match12 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-11-17T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match12 .
+
+ex:Match6 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-10-06T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match6 .
+
+ex:Match9 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-10-27T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match9 .
+
+ont:Tournament a owl:Class ;
+    rdfs:subClassOf _:Na831b2a3eebb41c283cd92a1128631d6,
+        ont:Tournament,
+        owl:Thing ;
+    owl:equivalentClass ont:Tournament ;
+    owl:sameAs ont:Tournament .
+
+owl:AnnotationProperty owl:sameAs owl:AnnotationProperty .
+
+swrl:AtomList owl:sameAs swrl:AtomList .
+
+"1"^^xsd:nonNegativeInteger a xsd:decimal,
+        xsd:integer,
+        xsd:nonNegativeInteger ;
+    owl:sameAs "1"^^xsd:nonNegativeInteger .
+
+"7.8"^^xsd:float a xsd:float ;
+    owl:sameAs "7.8"^^xsd:float .
+
+ex:Match1 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    ont:matchDate "2024-09-01T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ex:Match1 .
+
+ont:Goalkeeper a ont:Position,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ont:Goalkeeper,
+        ont:Position,
+        owl:Thing ;
+    owl:equivalentClass ont:Goalkeeper ;
+    owl:sameAs ont:Goalkeeper .
+
+owl:ObjectProperty owl:sameAs owl:ObjectProperty .
+
+owl:Class owl:sameAs owl:Class .
+
+owl:Restriction owl:sameAs owl:Restriction .
+
+2 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 2 .
+
+ont:Match101 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:matchDate "2024-09-15T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ont:Match101 .
+
+ont:Match102 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:matchDate "2024-10-04T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ont:Match102 .
+
+ont:Match103 a _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:matchDate "2024-10-15T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague ;
+    owl:sameAs ont:Match103 .
+
+ont:Forward a ont:Position,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ont:Forward,
+        ont:Position,
+        owl:Thing ;
+    owl:equivalentClass ont:Forward ;
+    owl:sameAs ont:Forward .
+
+xsd:dateTime a rdfs:Datatype ;
+    owl:disjointWith xsd:decimal,
+        xsd:float,
+        xsd:string ;
+    owl:sameAs xsd:dateTime .
+
+ont:Position a owl:Class ;
+    rdfs:subClassOf ont:Position,
+        owl:Thing ;
+    owl:equivalentClass ont:Position ;
+    owl:sameAs ont:Position .
+
+0 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 0 .
+
+ont:Team a owl:Class ;
+    rdfs:subClassOf _:N1f7858d181a44193a4c321c98f3e1d50,
+        _:N54ee1274ae1d4e93ab26fd59f0949ed7,
+        _:Nacf6d1e4f17f4489b1de7eeebf0a74da,
+        _:Nc5663398ba6245ff9ac71e58db6ff829,
+        ont:Team,
+        owl:Thing ;
+    owl:equivalentClass ont:Team ;
+    owl:sameAs ont:Team .
+
+1 a xsd:decimal,
+        xsd:integer ;
+    owl:sameAs 1 .
+
+ont:Match a owl:Class ;
+    rdfs:subClassOf _:N7322f67085934b838a387b5c08a56dcb,
+        _:N9613d978cddc4f40a5e46ba212acecba,
+        _:Ncc099317c43d46c29b994c0c7dcb4e09,
+        _:Ndd11a730ebbf43609fce5ca703fbd8f2,
+        ont:Match,
+        owl:Thing ;
+    owl:disjointWith ont:Team ;
+    owl:equivalentClass ont:Match ;
+    owl:sameAs ont:Match .
+
+ont:PremierLeague a _:Na831b2a3eebb41c283cd92a1128631d6,
+        ont:Tournament,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ont:hasMatch ex:Match1,
+        ex:Match10,
+        ex:Match11,
+        ex:Match12,
+        ex:Match2,
+        ex:Match3,
+        ex:Match4,
+        ex:Match5,
+        ex:Match6,
+        ex:Match7,
+        ex:Match8,
+        ex:Match9,
+        ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ont:PremierLeague .
+
+xsd:float a rdfs:Datatype ;
+    owl:disjointWith xsd:string ;
+    owl:sameAs xsd:float .
+
+rdfs:Datatype owl:sameAs rdfs:Datatype .
+
+owl:NamedIndividual owl:sameAs owl:NamedIndividual .
+
+xsd:string a rdfs:Datatype ;
+    owl:sameAs xsd:string .
+
+ont:PerformanceMetric a owl:Class ;
+    rdfs:subClassOf ont:PerformanceMetric,
+        owl:Thing ;
+    owl:disjointWith ont:Team ;
+    owl:equivalentClass ont:PerformanceMetric ;
+    owl:sameAs ont:PerformanceMetric .
+
+xsd:integer a rdfs:Datatype ;
+    owl:sameAs xsd:integer .
+
+xsd:decimal a rdfs:Datatype ;
+    owl:disjointWith xsd:float,
+        xsd:string ;
+    owl:sameAs xsd:decimal .
+
+ont:Player a owl:Class ;
+    rdfs:subClassOf _:N0e4d25de909f436a9bdf4506c67e5154,
+        _:N59114cf43af64ee0abdc5808b21100cd,
+        _:N7e55f789b00b4c2f9732a9afdf08045c,
+        _:Nff544081db1d4ce9a42c230f0cdb20b9,
+        ont:Player,
+        owl:Thing ;
+    owl:disjointWith ont:Team ;
+    owl:equivalentClass ont:Player ;
+    owl:sameAs ont:Player .
+
+owl:Thing a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    owl:equivalentClass owl:Thing ;
+    owl:sameAs owl:Thing .
+
+_:N3344d06dab7b48fd9728790d8a9b284e a swrl:Imp ;
+    rdfs:label "ExcellentPlayerRule" ;
+    swrla:isRuleEnabled true ;
+    rdfs:comment "" ;
+    owl:sameAs _:N3344d06dab7b48fd9728790d8a9b284e ;
+    swrl:body _:Nc01ce50df1f84deeaedf7dd94e3a7c20 ;
+    swrl:head _:N6af772f83db34eb48c9153cb4a4384fe .
+
+_:Nd15426bc37864105b546d05075e27a96 a swrl:Imp ;
+    rdfs:label "FatigueRiskRule" ;
+    swrla:isRuleEnabled true ;
+    rdfs:comment "" ;
+    owl:sameAs _:Nd15426bc37864105b546d05075e27a96 ;
+    swrl:body _:N11ac55e751e849628e798bb3fd200794 ;
+    swrl:head _:N550752be3ead4b84b62774903af92afe .
+
+_:N029a102286a7423884b91066c43ce1e3 a swrl:ClassAtom ;
+    owl:sameAs _:N029a102286a7423884b91066c43ce1e3 ;
+    swrl:argument1 :p ;
+    swrl:classPredicate ont:Player .
+
+_:N07df61dbd1964ecabb2349322b8d38d8 a swrl:DatavaluedPropertyAtom ;
+    owl:sameAs _:N07df61dbd1964ecabb2349322b8d38d8 ;
+    swrl:argument1 :p ;
+    swrl:argument2 :g ;
+    swrl:propertyPredicate ont:scoredGoals .
+
+_:N0ad0bf61ed1144019f16d6bbc75607f0 a rdf:List ;
+    rdf:first 0 ;
+    rdf:rest () ;
+    owl:sameAs _:N0ad0bf61ed1144019f16d6bbc75607f0 .
+
+_:N11ac55e751e849628e798bb3fd200794 a swrl:AtomList ;
+    rdf:first _:N029a102286a7423884b91066c43ce1e3 ;
+    rdf:rest _:N291692186ebd4a07b0384e18608ac932 ;
+    owl:sameAs _:N11ac55e751e849628e798bb3fd200794 .
+
+_:N1f78bafa712340f7ad943d552f043ec2 a swrl:DatavaluedPropertyAtom ;
+    owl:sameAs _:N1f78bafa712340f7ad943d552f043ec2 ;
+    swrl:argument1 :p ;
+    swrl:argument2 4.5 ;
+    swrl:propertyPredicate ont:hasPerformanceRating .
+
+_:N291692186ebd4a07b0384e18608ac932 a swrl:AtomList ;
+    rdf:first _:N5d2897d89874436ab164447ce0eeca3f ;
+    rdf:rest _:Nd54fd9d0359c4d7daf345dcf3e3f832b ;
+    owl:sameAs _:N291692186ebd4a07b0384e18608ac932 .
+
+_:N2e782984a3f24f1899a4d443a7fbaf85 a swrl:BuiltinAtom ;
+    owl:sameAs _:N2e782984a3f24f1899a4d443a7fbaf85 ;
+    swrl:arguments _:N9695efe2cacf43bbab15759820de2cd6 ;
+    swrl:builtin swrlb:greaterThan .
+
+_:N5242fe8284c540e195c5b9e4625fe6c1 a swrl:ClassAtom ;
+    owl:sameAs _:N5242fe8284c540e195c5b9e4625fe6c1 ;
+    swrl:argument1 :p ;
+    swrl:classPredicate ont:Player .
+
+_:N550752be3ead4b84b62774903af92afe a swrl:AtomList ;
+    rdf:first _:N1f78bafa712340f7ad943d552f043ec2 ;
+    rdf:rest () ;
+    owl:sameAs _:N550752be3ead4b84b62774903af92afe .
+
+_:N56fed76e55884a6290d6633456760390 a swrl:AtomList ;
+    rdf:first _:N07df61dbd1964ecabb2349322b8d38d8 ;
+    rdf:rest _:Ndab0fbb004f84217a3f937b38df59f3f ;
+    owl:sameAs _:N56fed76e55884a6290d6633456760390 .
+
+_:N572c971897e44065a33b97b3490a9ff5 a rdf:List ;
+    rdf:first 85 ;
+    rdf:rest () ;
+    owl:sameAs _:N572c971897e44065a33b97b3490a9ff5 .
+
+_:N5b11466868644ae39ee56db775ad2a9e a swrl:DatavaluedPropertyAtom ;
+    owl:sameAs _:N5b11466868644ae39ee56db775ad2a9e ;
+    swrl:argument1 :p ;
+    swrl:argument2 9.5 ;
+    swrl:propertyPredicate ont:hasPerformanceRating .
+
+_:N5d2897d89874436ab164447ce0eeca3f a swrl:DatavaluedPropertyAtom ;
+    owl:sameAs _:N5d2897d89874436ab164447ce0eeca3f ;
+    swrl:argument1 :p ;
+    swrl:argument2 :m ;
+    swrl:propertyPredicate ont:playedMinutes .
+
+_:N5fadec1193c041af8c3dbc0c60c74d96 a rdf:List ;
+    rdf:first 1 ;
+    rdf:rest () ;
+    owl:sameAs _:N5fadec1193c041af8c3dbc0c60c74d96 .
+
+_:N65a6f98a963c48af834aa47f4cd845db a swrl:BuiltinAtom ;
+    owl:sameAs _:N65a6f98a963c48af834aa47f4cd845db ;
+    swrl:arguments _:Ncf1be9b4e3794453a6dca0b22cf48f73 ;
+    swrl:builtin swrlb:greaterThan .
+
+_:N6af772f83db34eb48c9153cb4a4384fe a swrl:AtomList ;
+    rdf:first _:N5b11466868644ae39ee56db775ad2a9e ;
+    rdf:rest () ;
+    owl:sameAs _:N6af772f83db34eb48c9153cb4a4384fe .
+
+_:N9695efe2cacf43bbab15759820de2cd6 a rdf:List ;
+    rdf:first :g ;
+    rdf:rest _:N5fadec1193c041af8c3dbc0c60c74d96 ;
+    owl:sameAs _:N9695efe2cacf43bbab15759820de2cd6 .
+
+_:Na29490131c3e48629379b53d623faef1 a swrl:BuiltinAtom ;
+    owl:sameAs _:Na29490131c3e48629379b53d623faef1 ;
+    swrl:arguments _:Ne128cb6be5d749b7b85c70904f7479cc ;
+    swrl:builtin swrlb:greaterThan .
+
+_:Nbcc431bd578a463bb69eade114d43a30 a swrl:AtomList ;
+    rdf:first _:Na29490131c3e48629379b53d623faef1 ;
+    rdf:rest () ;
+    owl:sameAs _:Nbcc431bd578a463bb69eade114d43a30 .
+
+_:Nc01ce50df1f84deeaedf7dd94e3a7c20 a swrl:AtomList ;
+    rdf:first _:N5242fe8284c540e195c5b9e4625fe6c1 ;
+    rdf:rest _:N56fed76e55884a6290d6633456760390 ;
+    owl:sameAs _:Nc01ce50df1f84deeaedf7dd94e3a7c20 .
+
+_:Ncf1be9b4e3794453a6dca0b22cf48f73 a rdf:List ;
+    rdf:first :m ;
+    rdf:rest _:N572c971897e44065a33b97b3490a9ff5 ;
+    owl:sameAs _:Ncf1be9b4e3794453a6dca0b22cf48f73 .
+
+_:Nd54fd9d0359c4d7daf345dcf3e3f832b a swrl:AtomList ;
+    rdf:first _:N65a6f98a963c48af834aa47f4cd845db ;
+    rdf:rest () ;
+    owl:sameAs _:Nd54fd9d0359c4d7daf345dcf3e3f832b .
+
+_:Nd76c3805fdf140f89fdc78acc3b1b694 a swrl:DatavaluedPropertyAtom ;
+    owl:sameAs _:Nd76c3805fdf140f89fdc78acc3b1b694 ;
+    swrl:argument1 :p ;
+    swrl:argument2 :a ;
+    swrl:propertyPredicate ont:madeAssists .
+
+_:Ndab0fbb004f84217a3f937b38df59f3f a swrl:AtomList ;
+    rdf:first _:Nd76c3805fdf140f89fdc78acc3b1b694 ;
+    rdf:rest _:Ne210d8342d064a03ad7930ed7bc39d78 ;
+    owl:sameAs _:Ndab0fbb004f84217a3f937b38df59f3f .
+
+_:Ne128cb6be5d749b7b85c70904f7479cc a rdf:List ;
+    rdf:first :a ;
+    rdf:rest _:N0ad0bf61ed1144019f16d6bbc75607f0 ;
+    owl:sameAs _:Ne128cb6be5d749b7b85c70904f7479cc .
+
+_:Ne210d8342d064a03ad7930ed7bc39d78 a swrl:AtomList ;
+    rdf:first _:N2e782984a3f24f1899a4d443a7fbaf85 ;
+    rdf:rest _:Nbcc431bd578a463bb69eade114d43a30 ;
+    owl:sameAs _:Ne210d8342d064a03ad7930ed7bc39d78 .
+
+_:Na831b2a3eebb41c283cd92a1128631d6 a owl:Restriction ;
+    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass ont:Match ;
+    owl:onProperty ont:partOfTournament ;
+    owl:sameAs _:Na831b2a3eebb41c283cd92a1128631d6 .
+
+_:N1f7858d181a44193a4c321c98f3e1d50 a owl:Restriction ;
+    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass ont:Player ;
+    owl:onProperty ont:hasPlayer ;
+    owl:sameAs _:N1f7858d181a44193a4c321c98f3e1d50 .
+
+_:N54ee1274ae1d4e93ab26fd59f0949ed7 a owl:Restriction ;
+    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass ont:Tournament ;
+    owl:onProperty ont:participatesIn ;
+    owl:sameAs _:N54ee1274ae1d4e93ab26fd59f0949ed7 .
+
+_:Nc5663398ba6245ff9ac71e58db6ff829 a owl:Restriction ;
+    owl:onClass ont:Coach ;
+    owl:onProperty ont:hasCoach ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:sameAs _:Nc5663398ba6245ff9ac71e58db6ff829 .
+
+_:Nacf6d1e4f17f4489b1de7eeebf0a74da a owl:Restriction ;
+    rdfs:subClassOf _:Nacf6d1e4f17f4489b1de7eeebf0a74da ;
+    owl:allValuesFrom ont:Player ;
+    owl:equivalentClass _:Nacf6d1e4f17f4489b1de7eeebf0a74da ;
+    owl:onProperty ont:hasPlayer ;
+    owl:sameAs _:Nacf6d1e4f17f4489b1de7eeebf0a74da .
+
+_:N7322f67085934b838a387b5c08a56dcb a owl:Restriction ;
+    owl:onDataRange xsd:dateTime ;
+    owl:onProperty ont:matchDate ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:sameAs _:N7322f67085934b838a387b5c08a56dcb .
+
+_:N9613d978cddc4f40a5e46ba212acecba a owl:Restriction ;
+    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass ont:PerformanceMetric ;
+    owl:onProperty ont:forMatch ;
+    owl:sameAs _:N9613d978cddc4f40a5e46ba212acecba .
+
+_:Ncc099317c43d46c29b994c0c7dcb4e09 a owl:Restriction ;
+    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass ont:PerformanceMetric ;
+    owl:onProperty ont:hasPerformance ;
+    owl:sameAs _:Ncc099317c43d46c29b994c0c7dcb4e09 .
+
+_:Ndd11a730ebbf43609fce5ca703fbd8f2 a owl:Restriction ;
+    owl:onClass ont:Tournament ;
+    owl:onProperty ont:partOfTournament ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:sameAs _:Ndd11a730ebbf43609fce5ca703fbd8f2 .
+
+_:N0e4d25de909f436a9bdf4506c67e5154 a owl:Restriction ;
+    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onClass ont:Match ;
+    owl:onProperty ont:playedIn ;
+    owl:sameAs _:N0e4d25de909f436a9bdf4506c67e5154 .
+
+_:N59114cf43af64ee0abdc5808b21100cd a owl:Restriction ;
+    owl:onClass ont:Position ;
+    owl:onProperty ont:hasPosition ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:sameAs _:N59114cf43af64ee0abdc5808b21100cd .
+
+_:N7e55f789b00b4c2f9732a9afdf08045c a owl:Restriction ;
+    owl:onClass ont:Team ;
+    owl:onProperty ont:hasTeam ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:sameAs _:N7e55f789b00b4c2f9732a9afdf08045c .
+
+_:Nff544081db1d4ce9a42c230f0cdb20b9 a owl:Restriction ;
+    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onClass ont:PerformanceMetric ;
+    owl:onProperty ont:hasPerformance ;
+    owl:sameAs _:Nff544081db1d4ce9a42c230f0cdb20b9 .
+

@@ -1,0 +1,1578 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticSports.org/ontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticSports.org/ontology#">
+    <Prefix name="" IRI="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="ontology" IRI="http://www.semanticSports.org/ontology#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This ontology models a football domain including players, coaches, teams, matches, tournaments, positions, and performance metrics. It captures relationships such as player participation, match performance, coaching roles, and tournament structure. The ontology includes reasoning constraints, cardinality restrictions, and inverse properties to ensure semantic consistency and enable inference.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Coach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Defender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Forward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Goalkeeper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Match"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Midfielder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PerformanceMetric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tournament"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="coachesTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="forMatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCoach"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="partOfTournament"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="playedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPerformanceRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="madeAssists"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="matchDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="playedMinutes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="scoredGoals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="CodyGakpo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DarwinNunez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DefenderPos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ForwardPos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="GoalkeeperPos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="JurgenKlopp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="LiverpoolFC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="LuisDiaz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Match101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Match102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Match103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MidfielderPos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MohamedSalah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf201"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf203"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf301"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf302"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf303"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf401"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf402"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf403"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf501"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf502"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf503"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf601"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf602"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf603"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf701"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf702"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Perf703"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PremierLeague"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Defender"/>
+        <Class IRI="Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Forward"/>
+        <Class IRI="Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Goalkeeper"/>
+        <Class IRI="Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Match"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="forMatch"/>
+            <Class IRI="PerformanceMetric"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Match"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasPerformance"/>
+            <Class IRI="PerformanceMetric"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Match"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="partOfTournament"/>
+            <Class IRI="Tournament"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Match"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="matchDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Midfielder"/>
+        <Class IRI="Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Player"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="hasPerformance"/>
+            <Class IRI="PerformanceMetric"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Player"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="playedIn"/>
+            <Class IRI="Match"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Player"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasPosition"/>
+            <Class IRI="Position"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Player"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasTeam"/>
+            <Class IRI="Team"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Team"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasPlayer"/>
+            <Class IRI="Player"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Team"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasPlayer"/>
+            <Class IRI="Player"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Team"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="participatesIn"/>
+            <Class IRI="Tournament"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Team"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasCoach"/>
+            <Class IRI="Coach"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Tournament"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="partOfTournament"/>
+            <Class IRI="Match"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Coach"/>
+        <Class IRI="Player"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Coach"/>
+        <Class IRI="Position"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Match"/>
+        <Class IRI="Team"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="PerformanceMetric"/>
+        <Class IRI="Team"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Player"/>
+        <Class IRI="Team"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Player"/>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Player"/>
+        <NamedIndividual IRI="CodyGakpo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Player"/>
+        <NamedIndividual IRI="DarwinNunez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Defender"/>
+        <NamedIndividual IRI="DefenderPos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Forward"/>
+        <NamedIndividual IRI="ForwardPos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Goalkeeper"/>
+        <NamedIndividual IRI="GoalkeeperPos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Coach"/>
+        <NamedIndividual IRI="JurgenKlopp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Team"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Player"/>
+        <NamedIndividual IRI="LuisDiaz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Match"/>
+        <NamedIndividual IRI="Match101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Match"/>
+        <NamedIndividual IRI="Match102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Match"/>
+        <NamedIndividual IRI="Match103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Midfielder"/>
+        <NamedIndividual IRI="MidfielderPos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Player"/>
+        <NamedIndividual IRI="MohamedSalah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf203"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf301"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf302"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf303"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf401"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf402"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf403"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf501"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf502"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf503"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf601"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf602"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf603"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf701"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf702"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PerformanceMetric"/>
+        <NamedIndividual IRI="Perf703"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Tournament"/>
+        <NamedIndividual IRI="PremierLeague"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Player"/>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Player"/>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+        <NamedIndividual IRI="Perf201"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+        <NamedIndividual IRI="Perf202"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+        <NamedIndividual IRI="Perf203"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPosition"/>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+        <NamedIndividual IRI="MidfielderPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasTeam"/>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="AlexisMacAllister"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="CodyGakpo"/>
+        <NamedIndividual IRI="Perf701"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="CodyGakpo"/>
+        <NamedIndividual IRI="Perf702"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="CodyGakpo"/>
+        <NamedIndividual IRI="Perf703"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPosition"/>
+        <NamedIndividual IRI="CodyGakpo"/>
+        <NamedIndividual IRI="ForwardPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasTeam"/>
+        <NamedIndividual IRI="CodyGakpo"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="CodyGakpo"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="CodyGakpo"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="CodyGakpo"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="DarwinNunez"/>
+        <NamedIndividual IRI="Perf301"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="DarwinNunez"/>
+        <NamedIndividual IRI="Perf302"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="DarwinNunez"/>
+        <NamedIndividual IRI="Perf303"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPosition"/>
+        <NamedIndividual IRI="DarwinNunez"/>
+        <NamedIndividual IRI="ForwardPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasTeam"/>
+        <NamedIndividual IRI="DarwinNunez"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="DarwinNunez"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="DarwinNunez"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="DarwinNunez"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasCoach"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+        <NamedIndividual IRI="JurgenKlopp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="participatesIn"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+        <NamedIndividual IRI="PremierLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="LuisDiaz"/>
+        <NamedIndividual IRI="Perf401"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="LuisDiaz"/>
+        <NamedIndividual IRI="Perf402"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="LuisDiaz"/>
+        <NamedIndividual IRI="Perf403"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPosition"/>
+        <NamedIndividual IRI="LuisDiaz"/>
+        <NamedIndividual IRI="ForwardPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasTeam"/>
+        <NamedIndividual IRI="LuisDiaz"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="LuisDiaz"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="LuisDiaz"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="LuisDiaz"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="partOfTournament"/>
+        <NamedIndividual IRI="Match101"/>
+        <NamedIndividual IRI="PremierLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="partOfTournament"/>
+        <NamedIndividual IRI="Match102"/>
+        <NamedIndividual IRI="PremierLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="partOfTournament"/>
+        <NamedIndividual IRI="Match103"/>
+        <NamedIndividual IRI="PremierLeague"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPosition"/>
+        <NamedIndividual IRI="MidfielderPos"/>
+        <NamedIndividual IRI="MidfielderPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="MohamedSalah"/>
+        <NamedIndividual IRI="Perf101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="MohamedSalah"/>
+        <NamedIndividual IRI="Perf102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="MohamedSalah"/>
+        <NamedIndividual IRI="Perf103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPosition"/>
+        <NamedIndividual IRI="MohamedSalah"/>
+        <NamedIndividual IRI="ForwardPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasTeam"/>
+        <NamedIndividual IRI="MohamedSalah"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="MohamedSalah"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="MohamedSalah"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="MohamedSalah"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf101"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf102"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf103"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf201"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf202"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf203"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf301"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf302"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf303"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf401"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf402"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf403"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf501"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf502"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf503"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf601"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf602"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf603"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf701"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf702"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="forMatch"/>
+        <NamedIndividual IRI="Perf703"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+        <NamedIndividual IRI="Perf601"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+        <NamedIndividual IRI="Perf602"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+        <NamedIndividual IRI="Perf603"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPosition"/>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+        <NamedIndividual IRI="DefenderPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasTeam"/>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="TrentAlexanderArnold"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+        <NamedIndividual IRI="Perf501"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+        <NamedIndividual IRI="Perf502"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPerformance"/>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+        <NamedIndividual IRI="Perf503"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPosition"/>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+        <NamedIndividual IRI="DefenderPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasTeam"/>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+        <NamedIndividual IRI="LiverpoolFC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+        <NamedIndividual IRI="Match101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+        <NamedIndividual IRI="Match102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="playedIn"/>
+        <NamedIndividual IRI="VirgilVanDijk"/>
+        <NamedIndividual IRI="Match103"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="matchDate"/>
+        <NamedIndividual IRI="Match101"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-15T15:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="matchDate"/>
+        <NamedIndividual IRI="Match102"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-04T15:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="matchDate"/>
+        <NamedIndividual IRI="Match103"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-15T15:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf101"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf101"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf101"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf101"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf102"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf102"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf102"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">88</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf102"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf103"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf103"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf103"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">87</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf103"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf201"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf201"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf201"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf201"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf202"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf202"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf202"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf202"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf203"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf203"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf203"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">88</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf203"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf301"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf301"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf301"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf301"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf302"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf302"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf302"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf302"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf303"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf303"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf303"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf303"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf401"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf401"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf401"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf401"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf402"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf402"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf402"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf402"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf403"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf403"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf403"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf403"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf501"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf501"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf501"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf501"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf502"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf502"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf502"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf502"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf503"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf503"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf503"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf503"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf601"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf601"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf601"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf601"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf602"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf602"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf602"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf602"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf603"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf603"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf603"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf603"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf701"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf701"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf701"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf701"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf702"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf702"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf702"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">81</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf702"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <NamedIndividual IRI="Perf703"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="madeAssists"/>
+        <NamedIndividual IRI="Perf703"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="playedMinutes"/>
+        <NamedIndividual IRI="Perf703"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="scoredGoals"/>
+        <NamedIndividual IRI="Perf703"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="coachesTeam"/>
+        <ObjectProperty IRI="hasCoach"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasMatch"/>
+        <ObjectProperty IRI="partOfTournament"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="coachesTeam"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="hasCoach"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="coachesTeam"/>
+        <Class IRI="Coach"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="forMatch"/>
+        <Class IRI="PerformanceMetric"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCoach"/>
+        <Class IRI="Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMatch"/>
+        <Class IRI="Tournament"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPerformance"/>
+        <Class IRI="Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPlayer"/>
+        <Class IRI="Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPosition"/>
+        <Class IRI="Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTeam"/>
+        <Class IRI="Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="partOfTournament"/>
+        <Class IRI="Match"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="playedIn"/>
+        <Class IRI="Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="coachesTeam"/>
+        <Class IRI="Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="forMatch"/>
+        <Class IRI="Match"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCoach"/>
+        <Class IRI="Coach"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMatch"/>
+        <Class IRI="Match"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPerformance"/>
+        <Class IRI="PerformanceMetric"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPlayer"/>
+        <Class IRI="Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPosition"/>
+        <Class IRI="Position"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTeam"/>
+        <Class IRI="Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="partOfTournament"/>
+        <Class IRI="Tournament"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Tournament"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="playedIn"/>
+        <Class IRI="Match"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <Class IRI="PerformanceMetric"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="madeAssists"/>
+        <Class IRI="PerformanceMetric"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="matchDate"/>
+        <Class IRI="Match"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="playedMinutes"/>
+        <Class IRI="Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="scoredGoals"/>
+        <Class IRI="PerformanceMetric"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPerformanceRating"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="madeAssists"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="matchDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="playedMinutes"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="scoredGoals"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>ExcellentPlayerRule</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="Player"/>
+                <Variable abbreviatedIRI=":p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="scoredGoals"/>
+                <Variable abbreviatedIRI=":p"/>
+                <Variable abbreviatedIRI=":g"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="madeAssists"/>
+                <Variable abbreviatedIRI=":p"/>
+                <Variable abbreviatedIRI=":a"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable abbreviatedIRI=":g"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable abbreviatedIRI=":a"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="hasPerformanceRating"/>
+                <Variable abbreviatedIRI=":p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.5</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>FatigueRiskRule</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="Player"/>
+                <Variable abbreviatedIRI=":p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="playedMinutes"/>
+                <Variable abbreviatedIRI=":p"/>
+                <Variable abbreviatedIRI=":m"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable abbreviatedIRI=":m"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">85</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="hasPerformanceRating"/>
+                <Variable abbreviatedIRI=":p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

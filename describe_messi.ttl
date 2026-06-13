@@ -1,0 +1,16 @@
+@prefix ex: <http://www.semanticSports.org/data/> .
+@prefix ont: <http://www.semanticSports.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:LionelMessi a ont:Player ;
+    rdfs:label "LionelMessi"^^xsd:string ;
+    ont:birthDate "1987-06-24"^^xsd:date ;
+    ont:birthPlace "Argentina national football team"^^xsd:string ;
+    ont:hasPerformance ex:Perf_LionelMessi ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:InterMiami ;
+    ont:height "1.7"^^xsd:float ;
+    ont:nationality "Argentina national under-23 football team"^^xsd:string ;
+    ont:playedIn ex:Match5 .
+

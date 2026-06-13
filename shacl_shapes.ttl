@@ -1,0 +1,118 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ont: <http://www.semanticSports.org/ontology#> .
+@prefix ex: <http://www.semanticSports.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+########## PLAYER SHAPE ##########
+
+ex:PlayerShape
+    a sh:NodeShape ;
+    sh:targetClass ont:Player ;
+
+    # Player must have a label
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Player must have exactly one rdfs:label" ;
+    ] ;
+
+    # Player must play for exactly 1 team
+    sh:property [
+        sh:path ont:hasTeam ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Player must belong to exactly one team" ;
+    ] ;
+
+    # Player must have at least one performance metric
+    sh:property [
+        sh:path ont:hasPerformance ;
+        sh:minCount 1 ;
+        sh:message "Player must have at least one performance metric" ;
+    ] ;
+
+    # Birthdate (if exists) must be a date
+    sh:property [
+        sh:path ont:birthDate ;
+        sh:datatype xsd:date ;
+        sh:message "Birthdate must be a valid xsd:date" ;
+    ] ;
+
+    # Height (if exists) must be float
+    sh:property [
+        sh:path ont:height ;
+        sh:datatype xsd:float ;
+        sh:message "Height must be a float value" ;
+    ] 
+.
+
+
+########## TEAM SHAPE ##########
+
+ex:TeamShape
+    a sh:NodeShape ;
+    sh:targetClass ont:Team ;
+
+    # Team must have a label
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Team must have a label" ;
+    ] ;
+
+    # If founded date exists, it must be a date
+    sh:property [
+        sh:path ont:foundedDate ;
+        sh:datatype xsd:date ;
+        sh:message "Founded date must be a valid date" ;
+    ] ;
+
+    # If country exists → must be an IRI
+    sh:property [
+        sh:path ont:country ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Country must link to a valid IRI resource" ;
+    ] 
+.
+
+
+########## PERFORMANCE SHAPE ##########
+
+ex:PerformanceShape
+    a sh:NodeShape ;
+    sh:targetClass ont:PerformanceMetric ;
+
+    # Goals must be integer
+    sh:property [
+        sh:path ont:scoredGoals ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:message "Goals must be an integer value" ;
+    ] ;
+
+    # Assists must be integer
+    sh:property [
+        sh:path ont:madeAssists ;
+        sh:datatype xsd:integer ;
+        sh:message "Assists must be an integer value" ;
+    ] ;
+
+    # Minutes played must be integer
+    sh:property [
+        sh:path ont:playedMinutes ;
+        sh:datatype xsd:integer ;
+        sh:message "Minutes played must be an integer value" ;
+    ] ;
+
+    # Rating (if present) must be float
+    sh:property [
+        sh:path ont:hasPerformanceRating ;
+        sh:datatype xsd:float ;
+        sh:message "Performance rating must be a float" ;
+    ]
+.

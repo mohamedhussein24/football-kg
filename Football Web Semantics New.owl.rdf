@@ -1,0 +1,1079 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/"
+     xml:base="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ontology="http://www.semanticSports.org/ontology#">
+    <owl:Ontology rdf:about="http://www.semanticSports.org/ontology#">
+        <rdfs:comment>This ontology models a football domain including players, coaches, teams, matches, tournaments, positions, and performance metrics. It captures relationships such as player participation, match performance, coaching roles, and tournament structure. The ontology includes reasoning constraints, cardinality restrictions, and inverse properties to ensure semantic consistency and enable inference.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#coachesTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#coachesTeam">
+        <owl:inverseOf rdf:resource="http://www.semanticSports.org/ontology#hasCoach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Coach"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#forMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#forMatch">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#hasCoach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#hasCoach">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Coach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#hasMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#hasMatch">
+        <owl:inverseOf rdf:resource="http://www.semanticSports.org/ontology#partOfTournament"/>
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Tournament"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#hasPerformance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#hasPerformance">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#hasPlayer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#hasPlayer">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#hasPosition">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#hasTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#hasTeam">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#partOfTournament -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#partOfTournament">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Tournament"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Tournament"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#playedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticSports.org/ontology#playedIn">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#hasPerformanceRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticSports.org/ontology#hasPerformanceRating">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#madeAssists -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticSports.org/ontology#madeAssists">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#matchDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticSports.org/ontology#matchDate">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#playedMinutes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticSports.org/ontology#playedMinutes">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#scoredGoals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticSports.org/ontology#scoredGoals">
+        <rdfs:domain rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Coach">
+        <owl:disjointWith rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <owl:disjointWith rdf:resource="http://www.semanticSports.org/ontology#Position"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Defender -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Defender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticSports.org/ontology#Position"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Forward -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Forward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticSports.org/ontology#Position"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Goalkeeper -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Goalkeeper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticSports.org/ontology#Position"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Match -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Match">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#forMatch"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#hasPerformance"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#partOfTournament"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#Tournament"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#matchDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Midfielder -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Midfielder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticSports.org/ontology#Position"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#PerformanceMetric -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#PerformanceMetric">
+        <owl:disjointWith rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Player -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Player">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#hasPerformance"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#playedIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#hasPosition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#Position"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#hasTeam"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Position -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Position"/>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Team -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Team">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#hasPlayer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#hasPlayer"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#participatesIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#Tournament"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#hasCoach"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#Coach"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Tournament -->
+
+    <owl:Class rdf:about="http://www.semanticSports.org/ontology#Tournament">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticSports.org/ontology#partOfTournament"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#AlexisMacAllister -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#AlexisMacAllister">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf201"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf202"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf203"/>
+        <ontology:hasPosition rdf:resource="http://www.semanticSports.org/ontology#MidfielderPos"/>
+        <ontology:hasTeam rdf:resource="http://www.semanticSports.org/ontology#LiverpoolFC"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#CodyGakpo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#CodyGakpo">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf701"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf702"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf703"/>
+        <ontology:hasPosition rdf:resource="http://www.semanticSports.org/ontology#ForwardPos"/>
+        <ontology:hasTeam rdf:resource="http://www.semanticSports.org/ontology#LiverpoolFC"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#DarwinNunez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#DarwinNunez">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf301"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf302"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf303"/>
+        <ontology:hasPosition rdf:resource="http://www.semanticSports.org/ontology#ForwardPos"/>
+        <ontology:hasTeam rdf:resource="http://www.semanticSports.org/ontology#LiverpoolFC"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#DefenderPos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#DefenderPos">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Defender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#ForwardPos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#ForwardPos">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Forward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#GoalkeeperPos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#GoalkeeperPos">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Goalkeeper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#JurgenKlopp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#JurgenKlopp">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Coach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#LiverpoolFC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#LiverpoolFC">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Team"/>
+        <ontology:hasCoach rdf:resource="http://www.semanticSports.org/ontology#JurgenKlopp"/>
+        <ontology:participatesIn rdf:resource="http://www.semanticSports.org/ontology#PremierLeague"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#LuisDiaz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#LuisDiaz">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf401"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf402"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf403"/>
+        <ontology:hasPosition rdf:resource="http://www.semanticSports.org/ontology#ForwardPos"/>
+        <ontology:hasTeam rdf:resource="http://www.semanticSports.org/ontology#LiverpoolFC"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Match101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Match101">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+        <ontology:partOfTournament rdf:resource="http://www.semanticSports.org/ontology#PremierLeague"/>
+        <ontology:matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-15T15:00:00</ontology:matchDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Match102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Match102">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+        <ontology:partOfTournament rdf:resource="http://www.semanticSports.org/ontology#PremierLeague"/>
+        <ontology:matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-04T15:00:00</ontology:matchDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Match103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Match103">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Match"/>
+        <ontology:partOfTournament rdf:resource="http://www.semanticSports.org/ontology#PremierLeague"/>
+        <ontology:matchDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-15T15:00:00</ontology:matchDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#MidfielderPos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#MidfielderPos">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Midfielder"/>
+        <ontology:hasPosition rdf:resource="http://www.semanticSports.org/ontology#MidfielderPos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#MohamedSalah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#MohamedSalah">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf101"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf102"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf103"/>
+        <ontology:hasPosition rdf:resource="http://www.semanticSports.org/ontology#ForwardPos"/>
+        <ontology:hasTeam rdf:resource="http://www.semanticSports.org/ontology#LiverpoolFC"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf101">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.1</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf102">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf103">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.4</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf201">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.1</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf202 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf202">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:madeAssists>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:scoredGoals>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf203 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf203">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.4</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf301 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf301">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.1</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf302 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf302">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf303 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf303">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.5</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf401 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf401">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.1</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf402 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf402">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf403 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf403">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.5</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf501 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf501">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.1</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf502 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf502">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf503 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf503">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.5</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf601 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf601">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.1</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf602 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf602">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf603 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf603">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.5</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf701 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf701">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.1</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf702 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf702">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#Perf703 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#Perf703">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#PerformanceMetric"/>
+        <ontology:forMatch rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+        <ontology:hasPerformanceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.5</ontology:hasPerformanceRating>
+        <ontology:madeAssists rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ontology:madeAssists>
+        <ontology:playedMinutes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</ontology:playedMinutes>
+        <ontology:scoredGoals rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ontology:scoredGoals>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#PremierLeague -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#PremierLeague">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Tournament"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#TrentAlexanderArnold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#TrentAlexanderArnold">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf601"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf602"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf603"/>
+        <ontology:hasPosition rdf:resource="http://www.semanticSports.org/ontology#DefenderPos"/>
+        <ontology:hasTeam rdf:resource="http://www.semanticSports.org/ontology#LiverpoolFC"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticSports.org/ontology#VirgilVanDijk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticSports.org/ontology#VirgilVanDijk">
+        <rdf:type rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf501"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf502"/>
+        <ontology:hasPerformance rdf:resource="http://www.semanticSports.org/ontology#Perf503"/>
+        <ontology:hasPosition rdf:resource="http://www.semanticSports.org/ontology#DefenderPos"/>
+        <ontology:hasTeam rdf:resource="http://www.semanticSports.org/ontology#LiverpoolFC"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match101"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match102"/>
+        <ontology:playedIn rdf:resource="http://www.semanticSports.org/ontology#Match103"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/g">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>ExcellentPlayerRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticSports.org/ontology#scoredGoals"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/g"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticSports.org/ontology#madeAssists"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/a"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/g"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/a"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticSports.org/ontology#hasPerformanceRating"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.5</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>FatigueRiskRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticSports.org/ontology#Player"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticSports.org/ontology#playedMinutes"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/m"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticSports.org/ontology#hasPerformanceRating"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

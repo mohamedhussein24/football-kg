@@ -1,0 +1,7 @@
+rdflib
+SPARQLWrapper
+pyshacl
+pandas
+flask
+flask-cors
+requests

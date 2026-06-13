@@ -1,0 +1,25 @@
+@prefix ns1: <http://www.semanticSports.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticSports.org/data/AlHilal> ns1:totalGoals 47 .
+
+<http://www.semanticSports.org/data/AlNassr> ns1:totalGoals 78 .
+
+<http://www.semanticSports.org/data/Barcelona> ns1:totalGoals 33 .
+
+<http://www.semanticSports.org/data/BayernMunich> ns1:totalGoals 54 .
+
+<http://www.semanticSports.org/data/InterMiami> ns1:totalGoals 21 .
+
+<http://www.semanticSports.org/data/LiverpoolFC> ns1:totalGoals 77 .
+
+<http://www.semanticSports.org/data/ManchesterCity> ns1:totalGoals 81 .
+
+<http://www.semanticSports.org/data/PSG> ns1:totalGoals 11 .
+
+<http://www.semanticSports.org/data/RealMadrid> ns1:totalGoals 95 .
+
+<http://www.semanticSports.org/data/Tottenham> ns1:totalGoals 30 .
+
+ns1:LiverpoolFC ns1:totalGoals 7 .
+

@@ -1,0 +1,112 @@
+@prefix ns1: <http://www.semanticSports.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticSports.org/data/AleksandarMitrovic> a ns1:Player ;
+    rdfs:label "AleksandarMitrovic"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/AlHilal> .
+
+<http://www.semanticSports.org/data/AlexisMacAllister> a ns1:Player ;
+    rdfs:label "AlexisMacAllister"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/LiverpoolFC> .
+
+<http://www.semanticSports.org/data/AndersonTalisca> a ns1:Player ;
+    rdfs:label "AndersonTalisca"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/AlNassr> .
+
+<http://www.semanticSports.org/data/CodyGakpo> a ns1:Player ;
+    rdfs:label "CodyGakpo"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/LiverpoolFC> .
+
+<http://www.semanticSports.org/data/CristianoRonaldo> a ns1:Player ;
+    rdfs:label "CristianoRonaldo"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/AlNassr> .
+
+<http://www.semanticSports.org/data/DarwinNunez> a ns1:Player ;
+    rdfs:label "DarwinNunez"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/LiverpoolFC> .
+
+<http://www.semanticSports.org/data/ErlingHaaland> a ns1:Player ;
+    rdfs:label "ErlingHaaland"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/ManchesterCity> .
+
+<http://www.semanticSports.org/data/HarryKane> a ns1:Player ;
+    rdfs:label "HarryKane"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/BayernMunich> .
+
+<http://www.semanticSports.org/data/HeungMinSon> a ns1:Player ;
+    rdfs:label "HeungMinSon"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/Tottenham> .
+
+<http://www.semanticSports.org/data/JamalMusiala> a ns1:Player ;
+    rdfs:label "JamalMusiala"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/BayernMunich> .
+
+<http://www.semanticSports.org/data/JamesMaddison> a ns1:Player ;
+    rdfs:label "JamesMaddison"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/Tottenham> .
+
+<http://www.semanticSports.org/data/JudeBellingham> a ns1:Player ;
+    rdfs:label "JudeBellingham"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/RealMadrid> .
+
+<http://www.semanticSports.org/data/KevinDeBruyne> a ns1:Player ;
+    rdfs:label "KevinDeBruyne"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/ManchesterCity> .
+
+<http://www.semanticSports.org/data/KylianMbappe> a ns1:Player ;
+    rdfs:label "KylianMbappe"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/RealMadrid> .
+
+<http://www.semanticSports.org/data/LionelMessi> a ns1:Player ;
+    rdfs:label "LionelMessi"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/InterMiami> .
+
+<http://www.semanticSports.org/data/LuisDiaz> a ns1:Player ;
+    rdfs:label "LuisDiaz"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/LiverpoolFC> .
+
+<http://www.semanticSports.org/data/LukaModric> a ns1:Player ;
+    rdfs:label "LukaModric"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/RealMadrid> .
+
+<http://www.semanticSports.org/data/MohamedSalah> a ns1:Player ;
+    rdfs:label "MohamedSalah"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/LiverpoolFC> .
+
+<http://www.semanticSports.org/data/NeymarJr> a ns1:Player ;
+    rdfs:label "NeymarJr"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/AlHilal> .
+
+<http://www.semanticSports.org/data/OusmaneDembele> a ns1:Player ;
+    rdfs:label "OusmaneDembele"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/PSG> .
+
+<http://www.semanticSports.org/data/PhilFoden> a ns1:Player ;
+    rdfs:label "PhilFoden"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/ManchesterCity> .
+
+<http://www.semanticSports.org/data/RobertLewandowski> a ns1:Player ;
+    rdfs:label "RobertLewandowski"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/Barcelona> .
+
+<http://www.semanticSports.org/data/RubenNeves> a ns1:Player ;
+    rdfs:label "RubenNeves"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/AlHilal> .
+
+<http://www.semanticSports.org/data/SadioMane> a ns1:Player ;
+    rdfs:label "SadioMane"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/AlNassr> .
+
+<http://www.semanticSports.org/data/TrentAlexanderArnold> a ns1:Player ;
+    rdfs:label "TrentAlexanderArnold"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/LiverpoolFC> .
+
+<http://www.semanticSports.org/data/ViniciusJr> a ns1:Player ;
+    rdfs:label "ViniciusJr"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/RealMadrid> .
+
+<http://www.semanticSports.org/data/VirgilVanDijk> a ns1:Player ;
+    rdfs:label "VirgilVanDijk"^^xsd:string ;
+    ns1:hasTeam <http://www.semanticSports.org/data/LiverpoolFC> .
+

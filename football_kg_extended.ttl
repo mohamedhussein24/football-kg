@@ -1,0 +1,1022 @@
+@prefix : <http://www.semanticweb.org/se7slocal/ontologies/2025/9/untitled-ontology-7/> .
+@prefix ex: <http://www.semanticSports.org/data/> .
+@prefix ont: <http://www.semanticSports.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+swrla:isRuleEnabled a owl:AnnotationProperty .
+
+ex:AleksandarMitrovic a ont:Player ;
+    rdfs:label "AleksandarMitrovic"^^xsd:string ;
+    ont:hasPerformance ex:Perf_AleksandarMitrovic ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:AlHilal ;
+    ont:playedIn ex:Match12 .
+
+ex:AndersonTalisca a ont:Player ;
+    rdfs:label "AndersonTalisca"^^xsd:string ;
+    ont:hasPerformance ex:Perf_AndersonTalisca ;
+    ont:hasPosition ont:Defender ;
+    ont:hasTeam ex:AlNassr ;
+    ont:playedIn ex:Match10 .
+
+ex:CristianoRonaldo a ont:Player ;
+    rdfs:label "CristianoRonaldo"^^xsd:string ;
+    ont:birthDate "1985-02-05"^^xsd:date ;
+    ont:birthPlace "Funchal"^^xsd:string ;
+    ont:hasPerformance ex:Perf_CristianoRonaldo ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:AlNassr ;
+    ont:height "1.87"^^xsd:float ;
+    ont:nationality "Portugal national under-20 football team"^^xsd:string ;
+    ont:playedIn ex:Match5 .
+
+ex:ErlingHaaland a ont:Player ;
+    rdfs:label "ErlingHaaland"^^xsd:string ;
+    ont:birthDate "2000-07-21"^^xsd:date ;
+    ont:birthPlace "England national football team"^^xsd:string ;
+    ont:hasPerformance ex:Perf_ErlingHaaland ;
+    ont:hasPosition ont:Defender ;
+    ont:hasTeam ex:ManchesterCity ;
+    ont:height "1.94"^^xsd:float ;
+    ont:nationality "Norway national under-21 football team"^^xsd:string ;
+    ont:playedIn ex:Match3 .
+
+ex:HarryKane a ont:Player ;
+    rdfs:label "HarryKane"^^xsd:string ;
+    ont:hasPerformance ex:Perf_HarryKane ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:BayernMunich ;
+    ont:playedIn ex:Match12 .
+
+ex:HeungMinSon a ont:Player ;
+    rdfs:label "HeungMinSon"^^xsd:string ;
+    ont:hasPerformance ex:Perf_HeungMinSon ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:Tottenham ;
+    ont:playedIn ex:Match3 .
+
+ex:JamalMusiala a ont:Player ;
+    rdfs:label "JamalMusiala"^^xsd:string ;
+    ont:hasPerformance ex:Perf_JamalMusiala ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:BayernMunich ;
+    ont:playedIn ex:Match1 .
+
+ex:JamesMaddison a ont:Player ;
+    rdfs:label "JamesMaddison"^^xsd:string ;
+    ont:hasPerformance ex:Perf_JamesMaddison ;
+    ont:hasPosition ont:Defender ;
+    ont:hasTeam ex:Tottenham ;
+    ont:playedIn ex:Match4 .
+
+ex:JudeBellingham a ont:Player ;
+    rdfs:label "JudeBellingham"^^xsd:string ;
+    ont:hasPerformance ex:Perf_JudeBellingham ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:RealMadrid ;
+    ont:playedIn ex:Match2 .
+
+ex:KevinDeBruyne a ont:Player ;
+    rdfs:label "KevinDeBruyne"^^xsd:string ;
+    ont:hasPerformance ex:Perf_KevinDeBruyne ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:ManchesterCity ;
+    ont:playedIn ex:Match9 .
+
+ex:KylianMbappe a ont:Player ;
+    rdfs:label "KylianMbappe"^^xsd:string ;
+    ont:birthDate "1998-12-20"^^xsd:date ;
+    ont:birthPlace "France national football team"^^xsd:string ;
+    ont:hasPerformance ex:Perf_KylianMbappe ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:RealMadrid ;
+    ont:height "1.78"^^xsd:float ;
+    ont:nationality "France national football team"^^xsd:string ;
+    ont:playedIn ex:Match11 .
+
+ex:LionelMessi a ont:Player ;
+    rdfs:label "LionelMessi"^^xsd:string ;
+    ont:birthDate "1987-06-24"^^xsd:date ;
+    ont:birthPlace "Argentina national football team"^^xsd:string ;
+    ont:hasPerformance ex:Perf_LionelMessi ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:InterMiami ;
+    ont:height "1.7"^^xsd:float ;
+    ont:nationality "Argentina national under-23 football team"^^xsd:string ;
+    ont:playedIn ex:Match7 .
+
+ex:LukaModric a ont:Player ;
+    rdfs:label "LukaModric"^^xsd:string ;
+    ont:hasPerformance ex:Perf_LukaModric ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:RealMadrid ;
+    ont:playedIn ex:Match10 .
+
+ex:NeymarJr a ont:Player ;
+    rdfs:label "NeymarJr"^^xsd:string ;
+    ont:birthDate "1992-02-05"^^xsd:date ;
+    ont:birthPlace "Brazil national football team"^^xsd:string ;
+    ont:hasPerformance ex:Perf_NeymarJr ;
+    ont:hasPosition ont:Defender ;
+    ont:hasTeam ex:AlHilal ;
+    ont:height "1.75"^^xsd:float ;
+    ont:nationality "Brazil national under-17 football team"^^xsd:string ;
+    ont:playedIn ex:Match4 .
+
+ex:OusmaneDembele a ont:Player ;
+    rdfs:label "OusmaneDembele"^^xsd:string ;
+    ont:hasPerformance ex:Perf_OusmaneDembele ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:PSG ;
+    ont:playedIn ex:Match11 .
+
+ex:PhilFoden a ont:Player ;
+    rdfs:label "PhilFoden"^^xsd:string ;
+    ont:hasPerformance ex:Perf_PhilFoden ;
+    ont:hasPosition ont:Forward ;
+    ont:hasTeam ex:ManchesterCity ;
+    ont:playedIn ex:Match3 .
+
+ex:RobertLewandowski a ont:Player ;
+    rdfs:label "RobertLewandowski"^^xsd:string ;
+    ont:hasPerformance ex:Perf_RobertLewandowski ;
+    ont:hasPosition ont:Defender ;
+    ont:hasTeam ex:Barcelona ;
+    ont:playedIn ex:Match6 .
+
+ex:RubenNeves a ont:Player ;
+    rdfs:label "RubenNeves"^^xsd:string ;
+    ont:hasPerformance ex:Perf_RubenNeves ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:AlHilal ;
+    ont:playedIn ex:Match1 .
+
+ex:SadioMane a ont:Player ;
+    rdfs:label "SadioMane"^^xsd:string ;
+    ont:hasPerformance ex:Perf_SadioMane ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:AlNassr ;
+    ont:playedIn ex:Match6 .
+
+ex:ViniciusJr a ont:Player ;
+    rdfs:label "ViniciusJr"^^xsd:string ;
+    ont:hasPerformance ex:Perf_ViniciusJr ;
+    ont:hasPosition ont:Defender ;
+    ont:hasTeam ex:RealMadrid ;
+    ont:playedIn ex:Match6 .
+
+ont: a owl:Ontology ;
+    rdfs:comment "This ontology models a football domain including players, coaches, teams, matches, tournaments, positions, and performance metrics. It captures relationships such as player participation, match performance, coaching roles, and tournament structure. The ontology includes reasoning constraints, cardinality restrictions, and inverse properties to ensure semantic consistency and enable inference." .
+
+ont:GoalkeeperPos a ont:Goalkeeper,
+        owl:NamedIndividual .
+
+ont:birthDate a rdf:Property .
+
+ont:birthPlace a rdf:Property .
+
+ont:coachesTeam a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain ont:Coach ;
+    rdfs:range ont:Team ;
+    owl:inverseOf ont:hasCoach .
+
+ont:country a rdf:Property .
+
+ont:foundedDate a rdf:Property .
+
+ont:hasMatch a owl:ObjectProperty ;
+    rdfs:domain ont:Tournament ;
+    rdfs:range ont:Match ;
+    owl:inverseOf ont:partOfTournament .
+
+ont:height a rdf:Property .
+
+ont:nationality a rdf:Property .
+
+ex:AlexisMacAllister a ont:Player ;
+    rdfs:label "AlexisMacAllister"^^xsd:string ;
+    ont:hasPerformance ex:Perf_AlexisMacAllister ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:LiverpoolFC ;
+    ont:playedIn ex:Match7 ;
+    owl:sameAs ont:AlexisMacAllister .
+
+ex:Barcelona a ont:Team ;
+    rdfs:label "Barcelona"^^xsd:string ;
+    ont:participatesIn ex:GlobalTournament .
+
+ex:CodyGakpo a ont:Player ;
+    rdfs:label "CodyGakpo"^^xsd:string ;
+    ont:hasPerformance ex:Perf_CodyGakpo ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:LiverpoolFC ;
+    ont:playedIn ex:Match7 ;
+    owl:sameAs ont:CodyGakpo .
+
+ex:DarwinNunez a ont:Player ;
+    rdfs:label "DarwinNunez"^^xsd:string ;
+    ont:hasPerformance ex:Perf_DarwinNunez ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:LiverpoolFC ;
+    ont:playedIn ex:Match9 ;
+    owl:sameAs ont:DarwinNunez .
+
+ex:InterMiami a ont:Team ;
+    rdfs:label "InterMiami"^^xsd:string ;
+    ont:participatesIn ex:GlobalTournament .
+
+ex:LuisDiaz a ont:Player ;
+    rdfs:label "LuisDiaz"^^xsd:string ;
+    ont:hasPerformance ex:Perf_LuisDiaz ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:LiverpoolFC ;
+    ont:playedIn ex:Match2 ;
+    owl:sameAs ont:LuisDiaz .
+
+ex:MohamedSalah a ont:Player ;
+    rdfs:label "MohamedSalah"^^xsd:string ;
+    ont:birthDate "1992-06-15"^^xsd:date ;
+    ont:birthPlace "Egypt national football team"^^xsd:string ;
+    ont:hasPerformance ex:Perf_MohamedSalah ;
+    ont:hasPosition ont:Midfielder ;
+    ont:hasTeam ex:LiverpoolFC ;
+    ont:height "1.75"^^xsd:float ;
+    ont:nationality "Egypt national under-23 football team"^^xsd:string ;
+    ont:playedIn ex:Match10 ;
+    owl:sameAs ont:MohamedSalah .
+
+ex:PSG a ont:Team ;
+    rdfs:label "PSG"^^xsd:string ;
+    ont:participatesIn ex:GlobalTournament .
+
+ex:Perf_AleksandarMitrovic a ont:PerformanceMetric ;
+    ont:forMatch ex:Match12 ;
+    ont:hasPerformanceRating "7.9"^^xsd:float ;
+    ont:madeAssists 4 ;
+    ont:playedMinutes 2064 ;
+    ont:scoredGoals 28 .
+
+ex:Perf_AlexisMacAllister a ont:PerformanceMetric ;
+    ont:forMatch ex:Match7 ;
+    ont:hasPerformanceRating "5.7"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 686 ;
+    ont:scoredGoals 7 .
+
+ex:Perf_AndersonTalisca a ont:PerformanceMetric ;
+    ont:forMatch ex:Match10 ;
+    ont:hasPerformanceRating "7.4"^^xsd:float ;
+    ont:madeAssists 4 ;
+    ont:playedMinutes 1501 ;
+    ont:scoredGoals 27 .
+
+ex:Perf_CodyGakpo a ont:PerformanceMetric ;
+    ont:forMatch ex:Match7 ;
+    ont:hasPerformanceRating "5.7"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 667 ;
+    ont:scoredGoals 10 .
+
+ex:Perf_CristianoRonaldo a ont:PerformanceMetric ;
+    ont:forMatch ex:Match5 ;
+    ont:hasPerformanceRating "8.8"^^xsd:float ;
+    ont:madeAssists 5 ;
+    ont:playedMinutes 2043 ;
+    ont:scoredGoals 35 .
+
+ex:Perf_DarwinNunez a ont:PerformanceMetric ;
+    ont:forMatch ex:Match9 ;
+    ont:hasPerformanceRating "6.3"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 1320 ;
+    ont:scoredGoals 15 .
+
+ex:Perf_ErlingHaaland a ont:PerformanceMetric ;
+    ont:forMatch ex:Match3 ;
+    ont:hasPerformanceRating "10.0"^^xsd:float ;
+    ont:madeAssists 7 ;
+    ont:playedMinutes 2874 ;
+    ont:scoredGoals 52 .
+
+ex:Perf_HarryKane a ont:PerformanceMetric ;
+    ont:forMatch ex:Match12 ;
+    ont:hasPerformanceRating "9.2"^^xsd:float ;
+    ont:madeAssists 6 ;
+    ont:playedMinutes 1761 ;
+    ont:scoredGoals 42 .
+
+ex:Perf_HeungMinSon a ont:PerformanceMetric ;
+    ont:forMatch ex:Match3 ;
+    ont:hasPerformanceRating "7.6"^^xsd:float ;
+    ont:madeAssists 3 ;
+    ont:playedMinutes 549 ;
+    ont:scoredGoals 24 .
+
+ex:Perf_JamalMusiala a ont:PerformanceMetric ;
+    ont:forMatch ex:Match1 ;
+    ont:hasPerformanceRating "6.3"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 741 ;
+    ont:scoredGoals 12 .
+
+ex:Perf_JamesMaddison a ont:PerformanceMetric ;
+    ont:forMatch ex:Match4 ;
+    ont:hasPerformanceRating "5.9"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 486 ;
+    ont:scoredGoals 6 .
+
+ex:Perf_JudeBellingham a ont:PerformanceMetric ;
+    ont:forMatch ex:Match2 ;
+    ont:hasPerformanceRating "7.2"^^xsd:float ;
+    ont:madeAssists 3 ;
+    ont:playedMinutes 2671 ;
+    ont:scoredGoals 23 .
+
+ex:Perf_KevinDeBruyne a ont:PerformanceMetric ;
+    ont:forMatch ex:Match9 ;
+    ont:hasPerformanceRating "6.5"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 2716 ;
+    ont:scoredGoals 10 .
+
+ex:Perf_KylianMbappe a ont:PerformanceMetric ;
+    ont:forMatch ex:Match11 ;
+    ont:hasPerformanceRating "9.4"^^xsd:float ;
+    ont:madeAssists 6 ;
+    ont:playedMinutes 1860 ;
+    ont:scoredGoals 44 .
+
+ex:Perf_LionelMessi a ont:PerformanceMetric ;
+    ont:forMatch ex:Match7 ;
+    ont:hasPerformanceRating "7.2"^^xsd:float ;
+    ont:madeAssists 3 ;
+    ont:playedMinutes 2521 ;
+    ont:scoredGoals 21 .
+
+ex:Perf_LuisDiaz a ont:PerformanceMetric ;
+    ont:forMatch ex:Match2 ;
+    ont:hasPerformanceRating "6.4"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 1634 ;
+    ont:scoredGoals 11 .
+
+ex:Perf_LukaModric a ont:PerformanceMetric ;
+    ont:forMatch ex:Match10 ;
+    ont:hasPerformanceRating "5.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 922 ;
+    ont:scoredGoals 4 .
+
+ex:Perf_MohamedSalah a ont:PerformanceMetric ;
+    ont:forMatch ex:Match10 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 3 ;
+    ont:playedMinutes 436 ;
+    ont:scoredGoals 25 .
+
+ex:Perf_NeymarJr a ont:PerformanceMetric ;
+    ont:forMatch ex:Match4 ;
+    ont:hasPerformanceRating "6.1"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 2747 ;
+    ont:scoredGoals 13 .
+
+ex:Perf_OusmaneDembele a ont:PerformanceMetric ;
+    ont:forMatch ex:Match11 ;
+    ont:hasPerformanceRating "5.9"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 1337 ;
+    ont:scoredGoals 11 .
+
+ex:Perf_PhilFoden a ont:PerformanceMetric ;
+    ont:forMatch ex:Match3 ;
+    ont:hasPerformanceRating "7.3"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 605 ;
+    ont:scoredGoals 19 .
+
+ex:Perf_RobertLewandowski a ont:PerformanceMetric ;
+    ont:forMatch ex:Match6 ;
+    ont:hasPerformanceRating "8.7"^^xsd:float ;
+    ont:madeAssists 4 ;
+    ont:playedMinutes 2965 ;
+    ont:scoredGoals 33 .
+
+ex:Perf_RubenNeves a ont:PerformanceMetric ;
+    ont:forMatch ex:Match1 ;
+    ont:hasPerformanceRating "5.4"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 1779 ;
+    ont:scoredGoals 6 .
+
+ex:Perf_SadioMane a ont:PerformanceMetric ;
+    ont:forMatch ex:Match6 ;
+    ont:hasPerformanceRating "6.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 2813 ;
+    ont:scoredGoals 16 .
+
+ex:Perf_TrentAlexanderArnold a ont:PerformanceMetric ;
+    ont:forMatch ex:Match9 ;
+    ont:hasPerformanceRating "5.6"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 573 ;
+    ont:scoredGoals 4 .
+
+ex:Perf_ViniciusJr a ont:PerformanceMetric ;
+    ont:forMatch ex:Match6 ;
+    ont:hasPerformanceRating "7.9"^^xsd:float ;
+    ont:madeAssists 3 ;
+    ont:playedMinutes 2329 ;
+    ont:scoredGoals 24 .
+
+ex:Perf_VirgilVanDijk a ont:PerformanceMetric ;
+    ont:forMatch ex:Match8 ;
+    ont:hasPerformanceRating "5.3"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 1307 ;
+    ont:scoredGoals 5 .
+
+ex:TrentAlexanderArnold a ont:Player ;
+    rdfs:label "TrentAlexanderArnold"^^xsd:string ;
+    ont:hasPerformance ex:Perf_TrentAlexanderArnold ;
+    ont:hasPosition ont:Defender ;
+    ont:hasTeam ex:LiverpoolFC ;
+    ont:playedIn ex:Match9 ;
+    owl:sameAs ont:TrentAlexanderArnold .
+
+ex:VirgilVanDijk a ont:Player ;
+    rdfs:label "VirgilVanDijk"^^xsd:string ;
+    ont:hasPerformance ex:Perf_VirgilVanDijk ;
+    ont:hasPosition ont:Goalkeeper ;
+    ont:hasTeam ex:LiverpoolFC ;
+    ont:playedIn ex:Match8 ;
+    owl:sameAs ont:VirgilVanDijk .
+
+ont:AlexisMacAllister a ont:Player,
+        owl:NamedIndividual ;
+    ont:hasPosition ont:MidfielderPos ;
+    ont:hasTeam ont:LiverpoolFC ;
+    ont:playedIn ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ex:AlexisMacAllister .
+
+ont:CodyGakpo a ont:Player,
+        owl:NamedIndividual ;
+    ont:hasPerformance ont:Perf701,
+        ont:Perf702,
+        ont:Perf703 ;
+    ont:hasPosition ont:ForwardPos ;
+    ont:hasTeam ont:LiverpoolFC ;
+    ont:playedIn ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ex:CodyGakpo .
+
+ont:DarwinNunez a ont:Player,
+        owl:NamedIndividual ;
+    ont:hasPerformance ont:Perf301,
+        ont:Perf302,
+        ont:Perf303 ;
+    ont:hasPosition ont:ForwardPos ;
+    ont:hasTeam ont:LiverpoolFC ;
+    ont:playedIn ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ex:DarwinNunez .
+
+ont:JurgenKlopp a ont:Coach,
+        owl:NamedIndividual .
+
+ont:LuisDiaz a ont:Player,
+        owl:NamedIndividual ;
+    ont:hasPerformance ont:Perf401,
+        ont:Perf402,
+        ont:Perf403 ;
+    ont:hasPosition ont:ForwardPos ;
+    ont:hasTeam ont:LiverpoolFC ;
+    ont:playedIn ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ex:LuisDiaz .
+
+ont:MohamedSalah a ont:Player,
+        owl:NamedIndividual ;
+    ont:hasPerformance ont:Perf101,
+        ont:Perf102,
+        ont:Perf103 ;
+    ont:hasPosition ont:ForwardPos ;
+    ont:hasTeam ont:LiverpoolFC ;
+    ont:playedIn ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ex:MohamedSalah .
+
+ont:Perf101 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "9.1"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 90 ;
+    ont:scoredGoals 1 .
+
+ont:Perf102 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 88 ;
+    ont:scoredGoals 1 .
+
+ont:Perf103 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.4"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 87 ;
+    ont:scoredGoals 0 .
+
+ont:Perf301 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 .
+
+ont:Perf302 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 .
+
+ont:Perf303 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 .
+
+ont:Perf401 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 .
+
+ont:Perf402 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 .
+
+ont:Perf403 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 .
+
+ont:Perf501 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 .
+
+ont:Perf502 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 .
+
+ont:Perf503 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 .
+
+ont:Perf601 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 .
+
+ont:Perf602 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 .
+
+ont:Perf603 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 .
+
+ont:Perf701 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match101 ;
+    ont:hasPerformanceRating "8.1"^^xsd:float ;
+    ont:madeAssists 0 ;
+    ont:playedMinutes 80 ;
+    ont:scoredGoals 1 .
+
+ont:Perf702 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match102 ;
+    ont:hasPerformanceRating "7.8"^^xsd:float ;
+    ont:madeAssists 1 ;
+    ont:playedMinutes 81 ;
+    ont:scoredGoals 0 .
+
+ont:Perf703 a ont:PerformanceMetric,
+        owl:NamedIndividual ;
+    ont:forMatch ont:Match103 ;
+    ont:hasPerformanceRating "7.5"^^xsd:float ;
+    ont:madeAssists 2 ;
+    ont:playedMinutes 82 ;
+    ont:scoredGoals 0 .
+
+ont:TrentAlexanderArnold a ont:Player,
+        owl:NamedIndividual ;
+    ont:hasPerformance ont:Perf601,
+        ont:Perf602,
+        ont:Perf603 ;
+    ont:hasPosition ont:DefenderPos ;
+    ont:hasTeam ont:LiverpoolFC ;
+    ont:playedIn ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ex:TrentAlexanderArnold .
+
+ont:VirgilVanDijk a ont:Player,
+        owl:NamedIndividual ;
+    ont:hasPerformance ont:Perf501,
+        ont:Perf502,
+        ont:Perf503 ;
+    ont:hasPosition ont:DefenderPos ;
+    ont:hasTeam ont:LiverpoolFC ;
+    ont:playedIn ont:Match101,
+        ont:Match102,
+        ont:Match103 ;
+    owl:sameAs ex:VirgilVanDijk .
+
+ont:forMatch a owl:ObjectProperty ;
+    rdfs:domain ont:PerformanceMetric ;
+    rdfs:range ont:Match .
+
+ont:hasPosition a owl:ObjectProperty ;
+    rdfs:domain ont:Player ;
+    rdfs:range ont:Position .
+
+ont:hasTeam a owl:ObjectProperty ;
+    rdfs:domain ont:Player ;
+    rdfs:range ont:Team .
+
+ont:madeAssists a owl:DatatypeProperty ;
+    rdfs:domain ont:PerformanceMetric ;
+    rdfs:range xsd:integer .
+
+ont:matchDate a owl:DatatypeProperty ;
+    rdfs:domain ont:Match ;
+    rdfs:range xsd:dateTime .
+
+ont:participatesIn a owl:ObjectProperty ;
+    rdfs:domain ont:Team ;
+    rdfs:range ont:Tournament .
+
+ont:playedIn a owl:ObjectProperty ;
+    rdfs:domain ont:Player ;
+    rdfs:range ont:Match .
+
+ont:playedMinutes a owl:DatatypeProperty ;
+    rdfs:domain ont:Player ;
+    rdfs:range xsd:integer .
+
+ont:scoredGoals a owl:DatatypeProperty ;
+    rdfs:domain ont:PerformanceMetric ;
+    rdfs:range xsd:integer .
+
+ex:BayernMunich a ont:Team ;
+    rdfs:label "BayernMunich"^^xsd:string ;
+    ont:participatesIn ex:GlobalTournament .
+
+ex:Match5 a ont:Match ;
+    ont:matchDate "2024-10-06T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Match8 a ont:Match ;
+    ont:matchDate "2024-10-27T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Tottenham a ont:Team ;
+    rdfs:label "Tottenham"^^xsd:string ;
+    ont:participatesIn ex:GlobalTournament .
+
+ont:DefenderPos a ont:Defender,
+        owl:NamedIndividual .
+
+ont:MidfielderPos a ont:Midfielder,
+        owl:NamedIndividual ;
+    ont:hasPosition ont:MidfielderPos .
+
+ont:hasCoach a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain ont:Team ;
+    rdfs:range ont:Coach .
+
+ont:hasPerformance a owl:ObjectProperty ;
+    rdfs:domain ont:Player ;
+    rdfs:range ont:PerformanceMetric .
+
+ont:hasPerformanceRating a owl:DatatypeProperty ;
+    rdfs:domain ont:PerformanceMetric ;
+    rdfs:range xsd:float .
+
+ont:hasPlayer a owl:ObjectProperty ;
+    rdfs:domain ont:Team ;
+    rdfs:range ont:Player .
+
+:a a swrl:Variable .
+
+:g a swrl:Variable .
+
+:m a swrl:Variable .
+
+ex:AlHilal a ont:Team ;
+    rdfs:label "AlHilal"^^xsd:string ;
+    ont:participatesIn ex:GlobalTournament .
+
+ex:AlNassr a ont:Team ;
+    rdfs:label "AlNassr"^^xsd:string ;
+    ont:participatesIn ex:GlobalTournament .
+
+ex:ManchesterCity a ont:Team ;
+    rdfs:label "ManchesterCity"^^xsd:string ;
+    ont:participatesIn ex:GlobalTournament .
+
+ont:Forward a owl:Class ;
+    rdfs:subClassOf ont:Position .
+
+ont:partOfTournament a owl:ObjectProperty ;
+    rdfs:domain ont:Match ;
+    rdfs:range ont:Tournament .
+
+ex:Match1 a ont:Match ;
+    ont:matchDate "2024-09-08T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Match11 a ont:Match ;
+    ont:matchDate "2024-11-17T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Match12 a ont:Match ;
+    ont:matchDate "2024-11-24T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Match2 a ont:Match ;
+    ont:matchDate "2024-09-15T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Match4 a ont:Match ;
+    ont:matchDate "2024-09-29T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:RealMadrid a ont:Team ;
+    rdfs:label "RealMadrid"^^xsd:string ;
+    ont:country <http://www.wikidata.org/entity/Q30> ;
+    ont:foundedDate "2009-01-01"^^xsd:date ;
+    ont:participatesIn ex:GlobalTournament .
+
+ont:Coach a owl:Class ;
+    owl:disjointWith ont:Player,
+        ont:Position .
+
+ont:ForwardPos a ont:Forward,
+        owl:NamedIndividual .
+
+ont:PremierLeague a ont:Tournament,
+        owl:NamedIndividual .
+
+ex:Match10 a ont:Match ;
+    ont:matchDate "2024-11-10T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Match3 a ont:Match ;
+    ont:matchDate "2024-09-22T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Match6 a ont:Match ;
+    ont:matchDate "2024-10-13T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Match7 a ont:Match ;
+    ont:matchDate "2024-10-20T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ex:Match9 a ont:Match ;
+    ont:matchDate "2024-11-03T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ex:GlobalTournament .
+
+ont:Tournament a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass ont:Match ;
+            owl:onProperty ont:partOfTournament ] .
+
+ont:Goalkeeper a owl:Class ;
+    rdfs:subClassOf ont:Position .
+
+ont:Position a owl:Class .
+
+:p a swrl:Variable .
+
+ex:LiverpoolFC a ont:Team ;
+    rdfs:label "LiverpoolFC"^^xsd:string ;
+    ont:participatesIn ex:GlobalTournament ;
+    owl:sameAs ont:LiverpoolFC .
+
+ont:Defender a owl:Class ;
+    rdfs:subClassOf ont:Position .
+
+ont:LiverpoolFC a ont:Team,
+        owl:NamedIndividual ;
+    ont:hasCoach ont:JurgenKlopp ;
+    ont:participatesIn ont:PremierLeague ;
+    owl:sameAs ex:LiverpoolFC .
+
+ont:Match101 a ont:Match,
+        owl:NamedIndividual ;
+    ont:matchDate "2024-09-15T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague .
+
+ont:Match102 a ont:Match,
+        owl:NamedIndividual ;
+    ont:matchDate "2024-10-04T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague .
+
+ont:Match103 a ont:Match,
+        owl:NamedIndividual ;
+    ont:matchDate "2024-10-15T15:00:00"^^xsd:dateTime ;
+    ont:partOfTournament ont:PremierLeague .
+
+ont:Midfielder a owl:Class ;
+    rdfs:subClassOf ont:Position .
+
+ont:Team a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass ont:Tournament ;
+            owl:onProperty ont:participatesIn ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom ont:Player ;
+            owl:onProperty ont:hasPlayer ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass ont:Player ;
+            owl:onProperty ont:hasPlayer ],
+        [ a owl:Restriction ;
+            owl:onClass ont:Coach ;
+            owl:onProperty ont:hasCoach ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+ont:Match a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty ont:matchDate ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass ont:PerformanceMetric ;
+            owl:onProperty ont:hasPerformance ],
+        [ a owl:Restriction ;
+            owl:onClass ont:Tournament ;
+            owl:onProperty ont:partOfTournament ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass ont:PerformanceMetric ;
+            owl:onProperty ont:forMatch ] ;
+    owl:disjointWith ont:Team .
+
+ont:Player a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass ont:Team ;
+            owl:onProperty ont:hasTeam ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onClass ont:Match ;
+            owl:onProperty ont:playedIn ],
+        [ a owl:Restriction ;
+            owl:onClass ont:Position ;
+            owl:onProperty ont:hasPosition ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onClass ont:PerformanceMetric ;
+            owl:onProperty ont:hasPerformance ] ;
+    owl:disjointWith ont:Team .
+
+ont:PerformanceMetric a owl:Class ;
+    owl:disjointWith ont:Team .
+
+[] a swrl:Imp ;
+    rdfs:label "FatigueRiskRule" ;
+    swrla:isRuleEnabled true ;
+    rdfs:comment "" ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 :p ;
+                    swrl:classPredicate ont:Player ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:DatavaluedPropertyAtom ;
+                            swrl:argument1 :p ;
+                            swrl:argument2 :m ;
+                            swrl:propertyPredicate ont:playedMinutes ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:BuiltinAtom ;
+                                    swrl:arguments [ a rdf:List ;
+                                            rdf:first :m ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first 85 ;
+                                                    rdf:rest () ] ] ;
+                                    swrl:builtin swrlb:greaterThan ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DatavaluedPropertyAtom ;
+                    swrl:argument1 :p ;
+                    swrl:argument2 4.5 ;
+                    swrl:propertyPredicate ont:hasPerformanceRating ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    rdfs:label "ExcellentPlayerRule" ;
+    swrla:isRuleEnabled true ;
+    rdfs:comment "" ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 :p ;
+                    swrl:classPredicate ont:Player ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:DatavaluedPropertyAtom ;
+                            swrl:argument1 :p ;
+                            swrl:argument2 :g ;
+                            swrl:propertyPredicate ont:scoredGoals ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:DatavaluedPropertyAtom ;
+                                    swrl:argument1 :p ;
+                                    swrl:argument2 :a ;
+                                    swrl:propertyPredicate ont:madeAssists ] ;
+                            rdf:rest [ a swrl:AtomList ;
+                                    rdf:first [ a swrl:BuiltinAtom ;
+                                            swrl:arguments [ a rdf:List ;
+                                                    rdf:first :g ;
+                                                    rdf:rest [ a rdf:List ;
+                                                            rdf:first 1 ;
+                                                            rdf:rest () ] ] ;
+                                            swrl:builtin swrlb:greaterThan ] ;
+                                    rdf:rest [ a swrl:AtomList ;
+                                            rdf:first [ a swrl:BuiltinAtom ;
+                                                    swrl:arguments [ a rdf:List ;
+                                                            rdf:first :a ;
+                                                            rdf:rest [ a rdf:List ;
+                                                                    rdf:first 0 ;
+                                                                    rdf:rest () ] ] ;
+                                                    swrl:builtin swrlb:greaterThan ] ;
+                                            rdf:rest () ] ] ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DatavaluedPropertyAtom ;
+                    swrl:argument1 :p ;
+                    swrl:argument2 9.5 ;
+                    swrl:propertyPredicate ont:hasPerformanceRating ] ;
+            rdf:rest () ] .
+
